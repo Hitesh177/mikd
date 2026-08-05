@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.pnpm-store/
+.claude/
+.env
+.env.local
+.env.*.local
+.DS_Store
+*.log
+upload.mjs
