@@ -2,27 +2,45 @@
 @import './tailwind.css';
 @import './theme.css';
 
-/* Keep landscape hero artwork fully visible on portrait phones. A softened
-   backdrop fills the frame without changing the desktop edge-to-edge crop. */
-.hero-mobile-backdrop {
-  display: none;
-}
-
 @media (max-width: 767px) {
-  .hero-mobile-media {
-    object-fit: contain !important;
+  .page-video-hero {
+    display: flex;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    flex-direction: column;
   }
 
-  .hero-mobile-backdrop {
-    display: block;
-    position: absolute;
-    inset: -24px;
-    width: calc(100% + 48px);
-    height: calc(100% + 48px);
+  .page-video-media {
+    position: relative !important;
+    inset: auto !important;
+    width: 100%;
+    height: auto !important;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
-    filter: blur(18px);
-    opacity: 0.48;
-    transform: scale(1.06);
+    flex: none;
+  }
+
+  .page-video-content {
+    height: auto !important;
+    padding: 2rem 1.25rem 2.5rem;
+    background: #1A0A00;
+  }
+
+  .page-video-content h1 {
+    max-width: 19ch;
+    font-size: clamp(2.15rem, 9vw, 3.25rem) !important;
+    line-height: 1.05;
+  }
+
+  .page-video-content h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1rem !important;
+    line-height: 1.55;
+  }
+
+  .page-video-eyebrow {
+    display: none;
   }
 }
 

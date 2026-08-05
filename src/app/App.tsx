@@ -1504,11 +1504,10 @@ function HeroCarousel() {
     <section className="relative h-[92vh] min-h-[560px] overflow-hidden">
       {SLIDES.map((s, i) => (
         <div key={i} className="absolute inset-0 transition-opacity duration-1000" style={{ opacity: i === current ? 1 : 0 }}>
-          <img src={s.img} alt="" aria-hidden="true" className="hero-mobile-backdrop" />
           <img
             src={s.img}
             alt={`${s.h1} — Mayur International Kitchen Dubai Business Bay`}
-            className="hero-mobile-media w-full h-full object-cover"
+            className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
         </div>
@@ -1867,10 +1866,9 @@ function MenuPage() {
 
   return (
     <main className="min-h-screen">
-      <section className="relative h-[60vh] min-h-[420px] max-h-[640px] overflow-hidden" style={{ backgroundColor: "#1A0A00" }}>
-        <img src={menuHeroPoster} alt="" aria-hidden="true" className="hero-mobile-backdrop" />
+      <section className="page-video-hero relative h-[60vh] min-h-[420px] max-h-[640px] overflow-hidden" style={{ backgroundColor: "#1A0A00" }}>
         <video
-          className="hero-mobile-media absolute inset-0 w-full h-full object-cover"
+          className="page-video-media absolute inset-0 w-full h-full object-cover"
           src={menuHeroVideo}
           poster={menuHeroPoster}
           aria-label="Aerial drone footage of the Dubai Marina skyline and waterfront near Mayur International Kitchen Dubai in Business Bay"
@@ -1884,10 +1882,10 @@ function MenuPage() {
             A slow aerial shot of Dubai Marina's skyscrapers and waterfront, setting the scene for Mayur International Kitchen Dubai's Business Bay location.
           </span>
         </video>
-        <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(26,10,0,0.92) 0%, rgba(26,10,0,0.55) 55%, rgba(26,10,0,0.35) 100%)" }} />
+        <div className="absolute inset-0 hidden md:block" style={{ background: "linear-gradient(to top, rgba(26,10,0,0.92) 0%, rgba(26,10,0,0.55) 55%, rgba(26,10,0,0.35) 100%)" }} />
 
-        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
-          <div className="mb-4 text-xs font-bold uppercase tracking-[0.24em] text-[#FF5C00] [text-shadow:0_1px_8px_rgba(0,0,0,0.7)]">Mayur International Kitchen Dubai</div>
+        <div className="page-video-content relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
+          <div className="page-video-eyebrow mb-4 text-xs font-bold uppercase tracking-[0.24em] text-[#FF5C00] [text-shadow:0_1px_8px_rgba(0,0,0,0.7)]">Mayur International Kitchen Dubai</div>
           <h1
             className="font-bold text-white mb-4 leading-tight"
             style={{ fontFamily: "'Biryani', sans-serif", fontSize: "clamp(2.5rem, 6vw, 4rem)" }}
@@ -2151,11 +2149,10 @@ function OurStoryPage() {
 
         {/* Right panel — 60% image */}
         <div className="relative min-h-[360px] w-full overflow-hidden md:min-h-0 md:w-[60%]">
-          <img src={storyHeroImg} alt="" aria-hidden="true" className="hero-mobile-backdrop" />
           <img
             src={storyHeroImg}
             alt="Mayur International Kitchen — Our Story"
-            className="hero-mobile-media w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center"
           />
           <div
             className="absolute inset-y-0 left-0 w-20 pointer-events-none"
@@ -2475,10 +2472,9 @@ function OurStoryPage() {
 function GalleryPage() {
   return (
     <main className="min-h-screen">
-      <section className="relative h-[60vh] min-h-[420px] max-h-[640px] overflow-hidden" style={{ backgroundColor: "#1A0A00" }}>
-        <img src={galleryHeroPoster} alt="" aria-hidden="true" className="hero-mobile-backdrop" />
+      <section className="page-video-hero relative h-[60vh] min-h-[420px] max-h-[640px] overflow-hidden" style={{ backgroundColor: "#1A0A00" }}>
         <video
-          className="hero-mobile-media absolute inset-0 w-full h-full object-cover"
+          className="page-video-media absolute inset-0 w-full h-full object-cover"
           src={galleryHeroVideo}
           poster={galleryHeroPoster}
           aria-label="Night view of the Burj Khalifa framed by palm trees near Mayur International Kitchen Dubai in Business Bay"
@@ -2492,10 +2488,10 @@ function GalleryPage() {
             A night-time shot of the illuminated Burj Khalifa framed by swaying palm trees, close to Mayur International Kitchen Dubai's Business Bay location.
           </span>
         </video>
-        <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(26,10,0,0.92) 0%, rgba(26,10,0,0.55) 55%, rgba(26,10,0,0.35) 100%)" }} />
+        <div className="absolute inset-0 hidden md:block" style={{ background: "linear-gradient(to top, rgba(26,10,0,0.92) 0%, rgba(26,10,0,0.55) 55%, rgba(26,10,0,0.35) 100%)" }} />
 
-        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
-          <div className="mb-4 text-xs font-bold uppercase tracking-[0.24em] text-[#FF5C00] [text-shadow:0_1px_8px_rgba(0,0,0,0.7)]">Mayur International Kitchen Dubai</div>
+        <div className="page-video-content relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
+          <div className="page-video-eyebrow mb-4 text-xs font-bold uppercase tracking-[0.24em] text-[#FF5C00] [text-shadow:0_1px_8px_rgba(0,0,0,0.7)]">Mayur International Kitchen Dubai</div>
           <h1
             className="font-bold text-white mb-4 leading-tight"
             style={{ fontFamily: "'Biryani', sans-serif", fontSize: "clamp(2.5rem, 6vw, 4rem)" }}
@@ -2527,10 +2523,9 @@ function GalleryPage() {
 function BlogIndexPage() {
   return (
     <main className="min-h-screen">
-      <section className="relative h-[60vh] min-h-[420px] max-h-[640px] overflow-hidden" style={{ backgroundColor: "#1A0A00" }}>
-        <img src={blogHeroPoster} alt="" aria-hidden="true" className="hero-mobile-backdrop" />
+      <section className="page-video-hero relative h-[60vh] min-h-[420px] max-h-[640px] overflow-hidden" style={{ backgroundColor: "#1A0A00" }}>
         <video
-          className="hero-mobile-media absolute inset-0 w-full h-full object-cover"
+          className="page-video-media absolute inset-0 w-full h-full object-cover"
           src={blogHeroVideo}
           poster={blogHeroPoster}
           aria-label="The Museum of the Future with the Dubai Metro passing beneath it, near Mayur International Kitchen Dubai in Business Bay"
@@ -2544,10 +2539,10 @@ function BlogIndexPage() {
             A view of Dubai's Museum of the Future with its Arabic calligraphy facade, as a Dubai Metro train passes underneath at sunset, near Mayur International Kitchen Dubai's Business Bay location.
           </span>
         </video>
-        <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(26,10,0,0.92) 0%, rgba(26,10,0,0.55) 55%, rgba(26,10,0,0.35) 100%)" }} />
+        <div className="absolute inset-0 hidden md:block" style={{ background: "linear-gradient(to top, rgba(26,10,0,0.92) 0%, rgba(26,10,0,0.55) 55%, rgba(26,10,0,0.35) 100%)" }} />
 
-        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
-          <div className="mb-4 text-xs font-bold uppercase tracking-[0.24em] text-[#FF5C00] [text-shadow:0_1px_8px_rgba(0,0,0,0.7)]">Mayur International Kitchen Dubai</div>
+        <div className="page-video-content relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
+          <div className="page-video-eyebrow mb-4 text-xs font-bold uppercase tracking-[0.24em] text-[#FF5C00] [text-shadow:0_1px_8px_rgba(0,0,0,0.7)]">Mayur International Kitchen Dubai</div>
           <h1
             className="font-bold text-white mb-4 leading-tight"
             style={{ fontFamily: "'Biryani', sans-serif", fontSize: "clamp(2.5rem, 6vw, 4rem)" }}
@@ -2630,10 +2625,9 @@ function BlogPostPage() {
 function TouristGuideIndexPage() {
   return (
     <main className="min-h-screen">
-      <section className="relative h-[60vh] min-h-[420px] max-h-[640px] overflow-hidden" style={{ backgroundColor: "#1A0A00" }}>
-        <img src={guidesHeroPoster} alt="" aria-hidden="true" className="hero-mobile-backdrop" />
+      <section className="page-video-hero relative h-[60vh] min-h-[420px] max-h-[640px] overflow-hidden" style={{ backgroundColor: "#1A0A00" }}>
         <video
-          className="hero-mobile-media absolute inset-0 w-full h-full object-cover"
+          className="page-video-media absolute inset-0 w-full h-full object-cover"
           src={guidesHeroVideo}
           poster={guidesHeroPoster}
           aria-label="Aerial view of a Dubai beach resort with palm trees, sun loungers, and turquoise water"
@@ -2647,10 +2641,10 @@ function TouristGuideIndexPage() {
             An aerial drone shot of a Dubai beach resort — white sun loungers lined along the sand beside palm trees and turquoise water, welcoming visitors from around the world.
           </span>
         </video>
-        <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(26,10,0,0.92) 0%, rgba(26,10,0,0.55) 55%, rgba(26,10,0,0.35) 100%)" }} />
+        <div className="absolute inset-0 hidden md:block" style={{ background: "linear-gradient(to top, rgba(26,10,0,0.92) 0%, rgba(26,10,0,0.55) 55%, rgba(26,10,0,0.35) 100%)" }} />
 
-        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
-          <div className="mb-4 text-xs font-bold uppercase tracking-[0.24em] text-[#FF5C00] [text-shadow:0_1px_8px_rgba(0,0,0,0.7)]">Mayur International Kitchen Dubai</div>
+        <div className="page-video-content relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
+          <div className="page-video-eyebrow mb-4 text-xs font-bold uppercase tracking-[0.24em] text-[#FF5C00] [text-shadow:0_1px_8px_rgba(0,0,0,0.7)]">Mayur International Kitchen Dubai</div>
           <h1
             className="font-bold text-white mb-4 leading-tight"
             style={{ fontFamily: "'Biryani', sans-serif", fontSize: "clamp(2.15rem, 6vw, 4rem)" }}
@@ -2716,10 +2710,9 @@ function TouristGuideDetailPage() {
 function ContactPage() {
   return (
     <main className="min-h-screen">
-      <section className="relative h-[60vh] min-h-[420px] max-h-[640px] overflow-hidden" style={{ backgroundColor: "#1A0A00" }}>
-        <img src={contactHeroPoster} alt="" aria-hidden="true" className="hero-mobile-backdrop" />
+      <section className="page-video-hero relative h-[60vh] min-h-[420px] max-h-[640px] overflow-hidden" style={{ backgroundColor: "#1A0A00" }}>
         <video
-          className="hero-mobile-media absolute inset-0 w-full h-full object-cover"
+          className="page-video-media absolute inset-0 w-full h-full object-cover"
           src={contactHeroVideo}
           poster={contactHeroPoster}
           aria-label="The Burj Al Arab sail-shaped hotel viewed across the sea on a sunny day, near Mayur International Kitchen Dubai in Business Bay"
@@ -2733,10 +2726,10 @@ function ContactPage() {
             A daytime view of the sail-shaped Burj Al Arab hotel across calm blue water, with the Dubai coastline in the background near Mayur International Kitchen Dubai's Business Bay location.
           </span>
         </video>
-        <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(26,10,0,0.92) 0%, rgba(26,10,0,0.55) 55%, rgba(26,10,0,0.35) 100%)" }} />
+        <div className="absolute inset-0 hidden md:block" style={{ background: "linear-gradient(to top, rgba(26,10,0,0.92) 0%, rgba(26,10,0,0.55) 55%, rgba(26,10,0,0.35) 100%)" }} />
 
-        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
-          <div className="mb-4 text-xs font-bold uppercase tracking-[0.24em] text-[#FF5C00] [text-shadow:0_1px_8px_rgba(0,0,0,0.7)]">Mayur International Kitchen Dubai</div>
+        <div className="page-video-content relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
+          <div className="page-video-eyebrow mb-4 text-xs font-bold uppercase tracking-[0.24em] text-[#FF5C00] [text-shadow:0_1px_8px_rgba(0,0,0,0.7)]">Mayur International Kitchen Dubai</div>
           <h1
             className="font-bold text-white mb-4 leading-tight"
             style={{ fontFamily: "'Biryani', sans-serif", fontSize: "clamp(2.5rem, 6vw, 4rem)" }}
