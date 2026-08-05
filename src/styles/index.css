@@ -40,6 +40,48 @@
   .page-video-eyebrow {
     display: none;
   }
+
+  .offers-dialog-shell {
+    position: fixed !important;
+    right: 12px !important;
+    bottom: max(12px, env(safe-area-inset-bottom)) !important;
+    left: 12px !important;
+    width: auto !important;
+    max-width: none !important;
+  }
+
+  .offers-dialog {
+    display: flex;
+    max-height: calc(100dvh - 24px) !important;
+    flex-direction: column;
+    border-width: 3px !important;
+    border-radius: 18px !important;
+    box-shadow: 4px 4px 0 #1A0A00 !important;
+  }
+
+  .offers-dialog-header {
+    flex: none;
+    padding: 0.8rem 1rem 0.75rem !important;
+  }
+
+  .offers-dialog-title {
+    padding-right: 3rem;
+    font-size: 1.8rem !important;
+  }
+
+  .offers-dialog-body {
+    min-height: 0;
+    max-height: none !important;
+    flex: 1;
+    padding: 0.75rem !important;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .offers-deal {
+    gap: 0.5rem !important;
+    padding: 0.55rem 0.65rem !important;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

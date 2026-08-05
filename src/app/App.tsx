@@ -2866,6 +2866,8 @@ function OffersPopup() {
 
   useEffect(() => {
     if (!open) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") setOpen(false);
       if (e.key !== "Tab" || !dialogRef.current) return;
@@ -2878,6 +2880,7 @@ function OffersPopup() {
     window.addEventListener("keydown", onKey);
     return () => {
       window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = previousOverflow;
       triggerRef.current?.focus();
     };
   }, [open]);
@@ -2898,20 +2901,22 @@ function OffersPopup() {
         </button>
       )}
 
+      {open && <button type="button" aria-label="Close offers" onClick={() => setOpen(false)} className="fixed inset-0 bg-black/55 sm:hidden" />}
+
       <div
         aria-hidden={!open}
-        className={`absolute bottom-0 right-0 w-[390px] max-w-[calc(100vw-2rem)] origin-bottom-right transition-all duration-500 ease-out ${open ? "visible translate-y-0 scale-100 opacity-100" : "invisible pointer-events-none translate-y-5 scale-95 opacity-0"}`}
+        className={`offers-dialog-shell absolute bottom-0 right-0 w-[390px] max-w-[calc(100vw-2rem)] origin-bottom-right transition-all duration-500 ease-out ${open ? "visible translate-y-0 scale-100 opacity-100" : "invisible pointer-events-none translate-y-5 scale-95 opacity-0"}`}
       >
           <div
             ref={dialogRef}
             role="dialog"
-            aria-modal="false"
+            aria-modal="true"
             aria-labelledby="offers-title"
             aria-describedby="offers-description"
-            className="relative w-full overflow-hidden rounded-[22px]"
-            style={{ maxHeight: "min(680px, calc(100vh - 2rem))", backgroundColor: "#FFF9F0", border: "4px dotted #1A0A00", boxShadow: "8px 8px 0 #1A0A00" }}
+            className="offers-dialog relative w-full overflow-hidden rounded-[22px]"
+            style={{ maxHeight: "min(680px, calc(100dvh - 2rem))", backgroundColor: "#FFF9F0", border: "4px dotted #1A0A00", boxShadow: "8px 8px 0 #1A0A00" }}
           >
-            <div className="relative px-5 pb-4 pt-5" style={{ backgroundColor: "#FF5C00", borderBottom: "3px dotted #1A0A00" }}>
+            <div className="offers-dialog-header relative px-5 pb-4 pt-5" style={{ backgroundColor: "#FF5C00", borderBottom: "3px dotted #1A0A00" }}>
               <button
                 ref={closeRef}
                 onClick={() => setOpen(false)}
@@ -2926,7 +2931,7 @@ function OffersPopup() {
               </p>
               <h2
                 id="offers-title"
-                className="pr-10 font-bold leading-none"
+                className="offers-dialog-title pr-10 font-bold leading-none"
                 style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: "2.35rem", color: "#1A0A00", letterSpacing: "0.02em" }}
               >
                 Big flavour. Better deals.
@@ -2934,12 +2939,12 @@ function OffersPopup() {
               <p id="offers-description" className="mt-1 text-sm font-medium text-[#4A250D]">Eight customer favourites with free add-ons.</p>
             </div>
 
-            <div className="overflow-y-auto p-4" style={{ maxHeight: "calc(min(680px, 100vh - 2rem) - 126px)" }}>
+            <div className="offers-dialog-body overflow-y-auto p-4" style={{ maxHeight: "calc(min(680px, 100dvh - 2rem) - 126px)" }}>
               <div className="space-y-2">
                 {COMBO_OFFERS.map((deal) => (
                   <div
                     key={deal.num}
-                    className="flex items-start gap-3 rounded-xl px-3 py-3"
+                    className="offers-deal flex items-start gap-3 rounded-xl px-3 py-3"
                     style={{ backgroundColor: "#FFFDF9", border: "2px dotted #9B6A48" }}
                   >
                     <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-black" style={{ backgroundColor: "#FF5C00", color: "#1A0A00", border: "2px solid #1A0A00" }}>{deal.num}</span>
