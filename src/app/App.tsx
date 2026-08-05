@@ -1504,10 +1504,11 @@ function HeroCarousel() {
     <section className="relative h-[92vh] min-h-[560px] overflow-hidden">
       {SLIDES.map((s, i) => (
         <div key={i} className="absolute inset-0 transition-opacity duration-1000" style={{ opacity: i === current ? 1 : 0 }}>
+          <img src={s.img} alt="" aria-hidden="true" className="hero-mobile-backdrop" />
           <img
             src={s.img}
             alt={`${s.h1} — Mayur International Kitchen Dubai Business Bay`}
-            className="w-full h-full object-cover"
+            className="hero-mobile-media w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
         </div>
@@ -1867,8 +1868,9 @@ function MenuPage() {
   return (
     <main className="min-h-screen">
       <section className="relative h-[60vh] min-h-[420px] max-h-[640px] overflow-hidden" style={{ backgroundColor: "#1A0A00" }}>
+        <img src={menuHeroPoster} alt="" aria-hidden="true" className="hero-mobile-backdrop" />
         <video
-          className="absolute inset-0 w-full h-full object-cover"
+          className="hero-mobile-media absolute inset-0 w-full h-full object-cover"
           src={menuHeroVideo}
           poster={menuHeroPoster}
           aria-label="Aerial drone footage of the Dubai Marina skyline and waterfront near Mayur International Kitchen Dubai in Business Bay"
@@ -2149,10 +2151,11 @@ function OurStoryPage() {
 
         {/* Right panel — 60% image */}
         <div className="relative min-h-[360px] w-full overflow-hidden md:min-h-0 md:w-[60%]">
+          <img src={storyHeroImg} alt="" aria-hidden="true" className="hero-mobile-backdrop" />
           <img
             src={storyHeroImg}
             alt="Mayur International Kitchen — Our Story"
-            className="w-full h-full object-cover object-center"
+            className="hero-mobile-media w-full h-full object-cover object-center"
           />
           <div
             className="absolute inset-y-0 left-0 w-20 pointer-events-none"
@@ -2473,8 +2476,9 @@ function GalleryPage() {
   return (
     <main className="min-h-screen">
       <section className="relative h-[60vh] min-h-[420px] max-h-[640px] overflow-hidden" style={{ backgroundColor: "#1A0A00" }}>
+        <img src={galleryHeroPoster} alt="" aria-hidden="true" className="hero-mobile-backdrop" />
         <video
-          className="absolute inset-0 w-full h-full object-cover"
+          className="hero-mobile-media absolute inset-0 w-full h-full object-cover"
           src={galleryHeroVideo}
           poster={galleryHeroPoster}
           aria-label="Night view of the Burj Khalifa framed by palm trees near Mayur International Kitchen Dubai in Business Bay"
@@ -2524,8 +2528,9 @@ function BlogIndexPage() {
   return (
     <main className="min-h-screen">
       <section className="relative h-[60vh] min-h-[420px] max-h-[640px] overflow-hidden" style={{ backgroundColor: "#1A0A00" }}>
+        <img src={blogHeroPoster} alt="" aria-hidden="true" className="hero-mobile-backdrop" />
         <video
-          className="absolute inset-0 w-full h-full object-cover"
+          className="hero-mobile-media absolute inset-0 w-full h-full object-cover"
           src={blogHeroVideo}
           poster={blogHeroPoster}
           aria-label="The Museum of the Future with the Dubai Metro passing beneath it, near Mayur International Kitchen Dubai in Business Bay"
@@ -2626,8 +2631,9 @@ function TouristGuideIndexPage() {
   return (
     <main className="min-h-screen">
       <section className="relative h-[60vh] min-h-[420px] max-h-[640px] overflow-hidden" style={{ backgroundColor: "#1A0A00" }}>
+        <img src={guidesHeroPoster} alt="" aria-hidden="true" className="hero-mobile-backdrop" />
         <video
-          className="absolute inset-0 w-full h-full object-cover"
+          className="hero-mobile-media absolute inset-0 w-full h-full object-cover"
           src={guidesHeroVideo}
           poster={guidesHeroPoster}
           aria-label="Aerial view of a Dubai beach resort with palm trees, sun loungers, and turquoise water"
@@ -2711,8 +2717,9 @@ function ContactPage() {
   return (
     <main className="min-h-screen">
       <section className="relative h-[60vh] min-h-[420px] max-h-[640px] overflow-hidden" style={{ backgroundColor: "#1A0A00" }}>
+        <img src={contactHeroPoster} alt="" aria-hidden="true" className="hero-mobile-backdrop" />
         <video
-          className="absolute inset-0 w-full h-full object-cover"
+          className="hero-mobile-media absolute inset-0 w-full h-full object-cover"
           src={contactHeroVideo}
           poster={contactHeroPoster}
           aria-label="The Burj Al Arab sail-shaped hotel viewed across the sea on a sunny day, near Mayur International Kitchen Dubai in Business Bay"

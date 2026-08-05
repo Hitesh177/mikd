@@ -2,6 +2,30 @@
 @import './tailwind.css';
 @import './theme.css';
 
+/* Keep landscape hero artwork fully visible on portrait phones. A softened
+   backdrop fills the frame without changing the desktop edge-to-edge crop. */
+.hero-mobile-backdrop {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .hero-mobile-media {
+    object-fit: contain !important;
+  }
+
+  .hero-mobile-backdrop {
+    display: block;
+    position: absolute;
+    inset: -24px;
+    width: calc(100% + 48px);
+    height: calc(100% + 48px);
+    object-fit: cover;
+    filter: blur(18px);
+    opacity: 0.48;
+    transform: scale(1.06);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     scroll-behavior: auto !important;
