@@ -4,27 +4,25 @@
 
 @media (max-width: 767px) {
   .page-video-hero {
-    display: flex;
-    height: auto !important;
-    min-height: 0 !important;
-    max-height: none !important;
-    flex-direction: column;
+    display: block;
+    height: 72svh !important;
+    min-height: 560px !important;
+    max-height: 680px !important;
   }
 
   .page-video-media {
-    position: relative !important;
-    inset: auto !important;
+    position: absolute !important;
+    inset: 0 !important;
     width: 100%;
-    height: auto !important;
-    aspect-ratio: 16 / 9;
+    height: 100% !important;
     object-fit: cover;
-    flex: none;
   }
 
   .page-video-content {
-    height: auto !important;
-    padding: 2rem 1.25rem 2.5rem;
-    background: #1A0A00;
+    height: 100% !important;
+    justify-content: flex-end !important;
+    padding: 8rem 1.25rem 2.25rem;
+    background: transparent;
   }
 
   .page-video-content h1 {

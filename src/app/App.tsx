@@ -1882,7 +1882,7 @@ function MenuPage() {
             A slow aerial shot of Dubai Marina's skyscrapers and waterfront, setting the scene for Mayur International Kitchen Dubai's Business Bay location.
           </span>
         </video>
-        <div className="absolute inset-0 hidden md:block" style={{ background: "linear-gradient(to top, rgba(26,10,0,0.92) 0%, rgba(26,10,0,0.55) 55%, rgba(26,10,0,0.35) 100%)" }} />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(26,10,0,0.94) 0%, rgba(26,10,0,0.6) 48%, rgba(26,10,0,0.16) 100%)" }} />
 
         <div className="page-video-content relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
           <div className="page-video-eyebrow mb-4 text-xs font-bold uppercase tracking-[0.24em] text-[#FF5C00] [text-shadow:0_1px_8px_rgba(0,0,0,0.7)]">Mayur International Kitchen Dubai</div>
@@ -2488,7 +2488,7 @@ function GalleryPage() {
             A night-time shot of the illuminated Burj Khalifa framed by swaying palm trees, close to Mayur International Kitchen Dubai's Business Bay location.
           </span>
         </video>
-        <div className="absolute inset-0 hidden md:block" style={{ background: "linear-gradient(to top, rgba(26,10,0,0.92) 0%, rgba(26,10,0,0.55) 55%, rgba(26,10,0,0.35) 100%)" }} />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(26,10,0,0.94) 0%, rgba(26,10,0,0.6) 48%, rgba(26,10,0,0.16) 100%)" }} />
 
         <div className="page-video-content relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
           <div className="page-video-eyebrow mb-4 text-xs font-bold uppercase tracking-[0.24em] text-[#FF5C00] [text-shadow:0_1px_8px_rgba(0,0,0,0.7)]">Mayur International Kitchen Dubai</div>
@@ -2539,7 +2539,7 @@ function BlogIndexPage() {
             A view of Dubai's Museum of the Future with its Arabic calligraphy facade, as a Dubai Metro train passes underneath at sunset, near Mayur International Kitchen Dubai's Business Bay location.
           </span>
         </video>
-        <div className="absolute inset-0 hidden md:block" style={{ background: "linear-gradient(to top, rgba(26,10,0,0.92) 0%, rgba(26,10,0,0.55) 55%, rgba(26,10,0,0.35) 100%)" }} />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(26,10,0,0.94) 0%, rgba(26,10,0,0.6) 48%, rgba(26,10,0,0.16) 100%)" }} />
 
         <div className="page-video-content relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
           <div className="page-video-eyebrow mb-4 text-xs font-bold uppercase tracking-[0.24em] text-[#FF5C00] [text-shadow:0_1px_8px_rgba(0,0,0,0.7)]">Mayur International Kitchen Dubai</div>
@@ -2641,7 +2641,7 @@ function TouristGuideIndexPage() {
             An aerial drone shot of a Dubai beach resort — white sun loungers lined along the sand beside palm trees and turquoise water, welcoming visitors from around the world.
           </span>
         </video>
-        <div className="absolute inset-0 hidden md:block" style={{ background: "linear-gradient(to top, rgba(26,10,0,0.92) 0%, rgba(26,10,0,0.55) 55%, rgba(26,10,0,0.35) 100%)" }} />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(26,10,0,0.94) 0%, rgba(26,10,0,0.6) 48%, rgba(26,10,0,0.16) 100%)" }} />
 
         <div className="page-video-content relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
           <div className="page-video-eyebrow mb-4 text-xs font-bold uppercase tracking-[0.24em] text-[#FF5C00] [text-shadow:0_1px_8px_rgba(0,0,0,0.7)]">Mayur International Kitchen Dubai</div>
@@ -2726,7 +2726,7 @@ function ContactPage() {
             A daytime view of the sail-shaped Burj Al Arab hotel across calm blue water, with the Dubai coastline in the background near Mayur International Kitchen Dubai's Business Bay location.
           </span>
         </video>
-        <div className="absolute inset-0 hidden md:block" style={{ background: "linear-gradient(to top, rgba(26,10,0,0.92) 0%, rgba(26,10,0,0.55) 55%, rgba(26,10,0,0.35) 100%)" }} />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(26,10,0,0.94) 0%, rgba(26,10,0,0.6) 48%, rgba(26,10,0,0.16) 100%)" }} />
 
         <div className="page-video-content relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
           <div className="page-video-eyebrow mb-4 text-xs font-bold uppercase tracking-[0.24em] text-[#FF5C00] [text-shadow:0_1px_8px_rgba(0,0,0,0.7)]">Mayur International Kitchen Dubai</div>
