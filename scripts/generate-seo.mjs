@@ -1,7 +1,7 @@
 import { writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 
-const siteUrl = (process.env.VITE_SITE_URL || "http://localhost:5173").replace(/\/$/, "");
+const siteUrl = (process.env.VITE_SITE_URL || "https://mayurindiankitchen.com").replace(/\/$/, "");
 const routes = [
   "/",
   "/menu",
@@ -25,6 +25,7 @@ const routes = [
   "/tourist-guide/bangladeshis-in-dubai",
   "/tourist-guide/russians-in-dubai",
   "/tourist-guide/western-tourists-dubai",
+  "/tourist-guide/filipinos-in-dubai",
   "/contact",
   "/privacy",
 ];
