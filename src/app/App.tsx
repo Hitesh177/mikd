@@ -96,11 +96,11 @@ const LOCAL_SEO_FAQS = [
     answer: "Mayur International Kitchen Dubai is at Shop No. 5, The Metropolis Tower on Burj Khalifa Street in Business Bay, a short drive from Burj Khalifa, Dubai Mall, Downtown Dubai and Dubai Canal.",
   },
   {
-    question: "Does the restaurant serve Indian breakfast in Business Bay?",
-    answer: "Yes. The restaurant opens daily at 06:00 and the menu includes Indian breakfast favourites such as dosa, idli, paratha, egg dishes and chai. Availability can vary, so call ahead for a specific dish.",
+    question: "Does the restaurant serve breakfast in Business Bay?",
+    answer: "Yes. The restaurant opens daily at 06:00 with dosa, idli, paratha, egg dishes, chai and other all-day favourites. Availability can vary, so call ahead for a specific dish.",
   },
   {
-    question: "Are vegetarian Indian dishes available?",
+    question: "Are vegetarian dishes available?",
     answer: "Yes. The menu includes vegetarian biryani, paneer dishes, dal, chana masala, dosa, idli, breads, snacks and other meat-free choices. Ask the team about current preparation details and dietary requirements.",
   },
   {
@@ -113,7 +113,7 @@ const LOCAL_SEO_FAQS = [
   },
 ];
 const BUSINESS_BAY_LOCATION_FAQS = [
-  { question: "Does Mayur International Kitchen serve vegetarian and vegan Indian food?", answer: "Mayur International Kitchen Dubai serves many vegetarian dishes, including paneer, dal, chana masala, vegetarian biryani, dosa, idli, breads and snacks. Some dishes may suit a vegan diet, but guests should confirm ingredients and preparation with the team before ordering." },
+  { question: "Does Mayur International Kitchen serve vegetarian and vegan food?", answer: "Mayur International Kitchen Dubai serves many vegetarian dishes, including paneer, dal, chana masala, vegetarian biryani, dosa, idli, breads and snacks. Some dishes may suit a vegan diet, but guests should confirm ingredients and preparation with the team before ordering." },
   { question: "Does Mayur International Kitchen offer Jain food?", answer: "Jain preparation is not guaranteed as a standard menu service. Contact the Business Bay team before visiting to discuss the current kitchen's ability to accommodate a specific Jain request." },
   { question: "Does Mayur International Kitchen have gluten-free options?", answer: "Some rice, lentil and grilled dishes may not contain wheat ingredients, but the kitchen does not claim a dedicated gluten-free preparation area. Guests with allergies or coeliac disease should speak directly with the team before ordering." },
   { question: "Is Mayur International Kitchen located in Business Bay?", answer: "Yes. Mayur International Kitchen Dubai is at Shop No. 5, The Metropolis Tower, Burj Khalifa Street, Business Bay, Dubai." },
@@ -127,7 +127,7 @@ const BUSINESS_BAY_LOCATION_FAQS = [
   { question: "Does Mayur International Kitchen have outdoor seating?", answer: "Outdoor tables may be available at the Business Bay location, depending on weather and daily operations. Contact the restaurant to confirm current outdoor seating availability before visiting." },
   { question: "What are the opening hours?", answer: "Mayur International Kitchen Dubai is open daily from 06:00 to 23:30 hrs. Service times can change on public holidays, so confirm before travelling on special dates." },
   { question: "What are the most popular dishes at Mayur International Kitchen Dubai?", answer: "Popular choices include chicken biryani, butter chicken, tandoori grills, paneer dishes, fresh breads and karak chai. Browse the live menu for current dishes and final AED prices." },
-  { question: "Does Mayur International Kitchen serve authentic North Indian cuisine?", answer: "Yes. The menu includes North Indian curries, paneer dishes, dal, biryani, tandoori grills and breads, alongside South Indian, Pakistani and international choices." },
+  { question: "What cuisines does Mayur International Kitchen serve?", answer: "The international menu brings together Indian, Pakistani, South Asian and global favourites, including curries, biryani, charcoal grills, fried rice, noodles, burgers, sandwiches, breads and all-day breakfast choices." },
   { question: "Is Mayur International Kitchen suitable for large groups?", answer: "Larger groups are welcome when seating is available. Reserve through WhatsApp in advance and provide the party size, date and preferred time so the team can confirm arrangements." },
 ];
 const BRAND_PANELS = [
@@ -167,7 +167,7 @@ const recipeBook = storyTaiwanSketch;
 const SLIDES = [
   {
     img: galleryHeroPoster,
-    h1: "Business Bay's Finest Indian Kitchen",
+    h1: "Business Bay's International Kitchen",
     h2: "Minutes from Burj Khalifa and Downtown Dubai — dine in or order online.",
     cta: "Find Us",
     ctaLink: "/contact",
@@ -651,14 +651,14 @@ const COMBO_OFFERS = [
 const BLOGS = [
   {
     slug: "best-indian-food-dubai-business-bay",
-    title: "Best Indian Food in Business Bay Dubai 2026",
-    excerpt: "A 2026 guide to Indian dining in Business Bay, with current menu prices, signature dishes and visitor information for Mayur International Kitchen Dubai.",
+    title: "International Dining in Business Bay Dubai 2026",
+    excerpt: "A 2026 guide to all-day international dining in Business Bay, with current prices, signature dishes and visitor information for Mayur International Kitchen Dubai.",
     date: "2025-06-10",
-    img: "/images/blog/chef-mayur-indian-kitchen-dubai.png",
+    img: "/images/blog/chef-mayur-international-kitchen-dubai.png",
     content: [
-      { type: "h1", text: "Best Indian Food in Business Bay Dubai 2026" },
+      { type: "h1", text: "International Dining in Business Bay Dubai 2026" },
       { type: "p", text: "Updated for 2026, this guide covers current menu prices, signature dishes and practical visitor information for Mayur International Kitchen Dubai (MIK’D¹). Business Bay is one of Dubai's most active dining districts, serving office teams, residents and visitors staying near Downtown Dubai." },
-      { type: "h2", text: "Why MIK Dubai Is Business Bay's Best Indian Restaurant" },
+      { type: "h2", text: "Why MIK Dubai Is a Business Bay Favourite" },
       { type: "p", text: "Located at Shop No. 5, The Metropolis Tower, Burj Khalifa Street, MIK Dubai is the first international branch of a 15-year-old restaurant brand from Taiwan. Chef Mayur Srivastava trained in five-star hotels including the Taj, Oberoi, Marriott, and Westin — and it shows in every dish." },
       { type: "h3", text: "What Makes MIK Dubai Different?" },
       { type: "li", text: "100% Halal certified — every ingredient and preparation method follows strict halal standards." },
@@ -711,7 +711,7 @@ const BLOGS = [
     img: "/images/blog/indian-restaurant-near-burj-khalifa.png",
     content: [
       { type: "h1", text: "Top Halal Restaurants Near Dubai Downtown — A Complete Guide" },
-      { type: "p", text: "Dubai is a city where halal dining is the standard — but not all restaurants are equal in quality. If you're looking for halal Indian and Pakistani food near Downtown Dubai, Mayur International Kitchen (MIK’D¹) in Business Bay is the top recommendation." },
+      { type: "p", text: "Dubai is a city where halal dining is the standard — but not all restaurants are equal in quality. Mayur International Kitchen (MIK’D¹) in Business Bay offers a broad halal menu with Indian, Pakistani and international favourites near Downtown Dubai." },
       { type: "h2", text: "What Does Halal Mean at MIK Dubai?" },
       { type: "p", text: "At MIK Dubai, halal is not a marketing label — it's a non-negotiable principle. Every ingredient is sourced from halal-certified suppliers. The kitchen maintains strict separation. Our entire menu — from chicken to lamb to cooking oils — meets UAE halal standards." },
       { type: "h2", text: "Best Halal Dishes at MIK Dubai" },
@@ -729,14 +729,14 @@ const BLOGS = [
   },
   {
     slug: "indian-food-guide-russians-dubai",
-    title: "Indian Food in Dubai: A Guide for Russian Visitors",
-    excerpt: "First time trying Indian food in Dubai? This guide for Russian tourists explains what to order, what to expect, and why MIK Dubai is the perfect introduction.",
+    title: "Dubai Dining Guide for Russian Visitors",
+    excerpt: "A practical guide for Russian visitors exploring MIK Dubai's international menu, from approachable curries and biryani to breads, grills and refreshing drinks.",
     date: "2025-07-10",
     img: "/images/blog/indian-curry-rice-business-bay.png",
     content: [
-      { type: "h1", text: "Indian Food in Dubai: A Guide for Russian Visitors" },
-      { type: "p", text: "Дорогие российские гости Дубая! Dubai is home to one of the largest Indian restaurant scenes in the world. If you haven't tried Indian cuisine yet, Mayur International Kitchen in Business Bay is the ideal place to start." },
-      { type: "h2", text: "Why Try Indian Food in Dubai?" },
+      { type: "h1", text: "Dubai Dining Guide for Russian Visitors" },
+      { type: "p", text: "Дорогие российские гости Дубая! Dubai is home to one of the world's most varied dining scenes. If you haven't tried Indian cuisine yet, the Indian selections within Mayur International Kitchen's wider international menu are an approachable place to start." },
+      { type: "h2", text: "Explore More Flavours in Dubai" },
       { type: "p", text: "Indian cuisine is one of the world's most diverse and aromatic food cultures — with influences from Persia, Central Asia, and the Mediterranean. In Dubai, the quality of Indian food is exceptional because the community is large, ingredients are fresh, and competition is high." },
       { type: "h2", text: "What to Order First (Beginner-Friendly Dishes)" },
       { type: "h3", text: "Butter Chicken (AED 19.25)" },
@@ -776,13 +776,13 @@ const BLOGS = [
   },
   {
     slug: "vegetarian-food-dubai-indian",
-    title: "Best Vegetarian Indian Food in Dubai — Dal Tadka to Palak Paneer",
-    excerpt: "A complete vegetarian guide to eating Indian food in Dubai — with the best veg dishes at Mayur International Kitchen, Business Bay.",
+    title: "Best Vegetarian Food in Dubai — Dal Tadka to Palak Paneer",
+    excerpt: "A complete guide to vegetarian dining at Mayur International Kitchen in Business Bay, from dal and paneer to dosa, biryani and fresh snacks.",
     date: "2025-07-20",
     img: "/images/blog/paneer-tikka-business-bay.png",
     content: [
-      { type: "h1", text: "Best Vegetarian Indian Food in Dubai" },
-      { type: "p", text: "Indian cuisine is one of the world's great vegetarian food traditions — thousands of years of cooking without meat has produced a vegetarian repertoire that is rich, satisfying, and endlessly varied. At Mayur International Kitchen Dubai, our vegetarian menu is extensive and authentic." },
+      { type: "h1", text: "Best Vegetarian Food in Dubai" },
+      { type: "p", text: "Indian cuisine is one of the world's great vegetarian food traditions — thousands of years of cooking without meat has produced a repertoire that is rich, satisfying and endlessly varied. Mayur International Kitchen Dubai's wider international menu includes an extensive selection of these vegetarian favourites." },
       { type: "h2", text: "Top Vegetarian Dishes at MIK Dubai" },
       { type: "h3", text: "Dal Tadka (AED 8.50)" },
       { type: "p", text: "Yellow lentils tempered with cumin, mustard seeds, dried red chilli, and a finishing touch of ghee. Simple, nourishing, and deeply comforting. Pair with rice or roti." },
@@ -804,14 +804,14 @@ const BLOGS = [
   },
   {
     slug: "indian-breakfast-business-bay-dubai",
-    title: "Best Indian Breakfast in Business Bay Dubai: What to Order in 2026",
-    excerpt: "Looking for an affordable Indian breakfast in Business Bay? Explore fresh parathas, dosa, idli, egg dishes, nihari and chai at MIK Dubai.",
+    title: "Best Breakfast in Business Bay Dubai: What to Order in 2026",
+    excerpt: "Looking for an affordable breakfast in Business Bay? Explore fresh parathas, dosa, idli, egg dishes, nihari and chai at MIK Dubai.",
     date: "2026-08-05",
     img: "/images/blog/authentic-indian-curry-business-bay.png",
     content: [
-      { type: "h1", text: "Best Indian Breakfast in Business Bay Dubai: What to Order in 2026" },
-      { type: "p", text: "A good breakfast in Business Bay needs to do three things: arrive fresh, keep you satisfied through a busy morning, and offer enough choice for different appetites. Mayur International Kitchen Dubai brings North Indian, South Indian and subcontinental breakfast favourites together at Shop No. 5, The Metropolis Tower on Burj Khalifa Street." },
-      { type: "h2", text: "South Indian Breakfast: Dosa and Idli" },
+      { type: "h1", text: "Best Breakfast in Business Bay Dubai: What to Order in 2026" },
+      { type: "p", text: "A good breakfast in Business Bay needs to arrive fresh, keep you satisfied through a busy morning and offer enough choice for different appetites. Mayur International Kitchen Dubai brings regional and international breakfast favourites together at Shop No. 5, The Metropolis Tower on Burj Khalifa Street." },
+      { type: "h2", text: "A Light Breakfast: Dosa and Idli" },
       { type: "p", text: "For a lighter start, order a crisp Masala Dosa (AED 6.75), Dosa Set (AED 6) or soft Idly Set (AED 6). These dishes balance texture and flavour without feeling too heavy, making them practical for office mornings, hotel guests and anyone exploring Downtown Dubai." },
       { type: "h2", text: "Fresh Parathas for a Filling Morning" },
       { type: "p", text: "Choose Aloo Paratha (AED 6.75), Chicken Paratha (AED 8.75) or Keema Paratha (AED 9). If you prefer something simple alongside eggs or curry, Fresh Paratha, Wheat Paratha and Kerala Paratha are each AED 1.50." },
@@ -823,21 +823,21 @@ const BLOGS = [
       { type: "p", text: "MIK Dubai is in The Metropolis Tower, convenient for Business Bay offices and a short drive from Downtown Dubai. Breakfast-item availability can vary during the day, so call 054 996 6937 before travelling if you have one specific dish in mind." },
     ],
     faq: [
-      { question: "Where can I get Indian breakfast in Business Bay?", answer: "Mayur International Kitchen Dubai is at Shop No. 5, The Metropolis Tower, Burj Khalifa Street, Business Bay, with dosa, idli, parathas, eggs, nihari and other breakfast choices." },
-      { question: "What vegetarian Indian breakfast options are available?", answer: "Vegetarian choices include Masala Dosa, Dosa Set, Idly Set, Aloo Paratha, Chole Poori Halwa, Chana Masala and several breads." },
-      { question: "Can I find an Indian breakfast under AED 10?", answer: "Yes. Options include Masala Dosa at AED 6.75, Idly Set at AED 6, Aloo Paratha at AED 6.75 and egg dishes starting at AED 3." },
+      { question: "Where can I get breakfast in Business Bay?", answer: "Mayur International Kitchen Dubai is at Shop No. 5, The Metropolis Tower, Burj Khalifa Street, Business Bay, with dosa, idli, parathas, eggs, nihari and other breakfast choices." },
+      { question: "What vegetarian breakfast options are available?", answer: "Vegetarian choices include Masala Dosa, Dosa Set, Idly Set, Aloo Paratha, Chole Poori Halwa, Chana Masala and several breads." },
+      { question: "Can I find breakfast under AED 10?", answer: "Yes. Options include Masala Dosa at AED 6.75, Idly Set at AED 6, Aloo Paratha at AED 6.75 and egg dishes starting at AED 3." },
       { question: "Should I confirm breakfast availability?", answer: "Yes. Call 054 996 6937 before your visit if you want a particular breakfast dish, as availability can change during the day." },
     ],
   },
   {
     slug: "late-night-indian-restaurant-business-bay",
-    title: "Indian Restaurant in Business Bay Open 6 AM to 11:30 PM",
-    excerpt: "Authentic Indian food in Business Bay from 6 AM to 11:30 PM daily, with breakfast, biryani, grills, curries and free delivery.",
+    title: "Restaurant in Business Bay Open 6 AM to 11:30 PM",
+    excerpt: "International dining in Business Bay from 6 AM to 11:30 PM daily, with breakfast, biryani, grills, curries and free delivery.",
     date: "2026-08-05",
     img: "/images/blog/indian-biryani-spread-dubai.png",
     content: [
-      { type: "h1", text: "Indian Restaurant in Business Bay Open 6 AM to 11:30 PM" },
-      { type: "p", text: "Early office mornings, busy afternoons and evening plans all call for flexible dining hours. Mayur International Kitchen Dubai serves Indian and Pakistani favourites in Business Bay every day from 06:00 to 23:30, giving residents, office teams and visitors a convenient option near Downtown Dubai." },
+      { type: "h1", text: "Restaurant in Business Bay Open 6 AM to 11:30 PM" },
+      { type: "p", text: "Early office mornings, busy afternoons and evening plans all call for flexible dining hours. Mayur International Kitchen Dubai serves an international all-day menu in Business Bay from 06:00 to 23:30, giving residents, office teams and visitors a convenient option near Downtown Dubai." },
       { type: "h2", text: "Food for Every Appetite, All Day" },
       { type: "p", text: "For a complete one-dish meal, Chicken Biriyani (AED 13) is aromatic, filling and easy to share. Curry lovers can pair Butter Chicken (AED 19.25) with Plain Naan (AED 3), Garlic Naan (AED 8) or Tandoori Roti (AED 2.50)." },
       { type: "h2", text: "Charcoal Grills for Dinner" },
@@ -851,20 +851,20 @@ const BLOGS = [
     ],
     faq: [
       { question: "What time does MIK Dubai close?", answer: "MIK Dubai is open daily from 06:00 to 23:30. Call 054 996 6937 to confirm kitchen service when visiting close to closing or on a public holiday." },
-      { question: "Is there late-night Indian food near Downtown Dubai?", answer: "Yes. MIK Dubai is in Business Bay on Burj Khalifa Street, a short drive from Downtown Dubai and Burj Khalifa." },
+      { question: "Is there late-night dining near Downtown Dubai?", answer: "Yes. MIK Dubai is in Business Bay on Burj Khalifa Street, a short drive from Downtown Dubai and Burj Khalifa." },
       { question: "Are vegetarian dishes available late at night?", answer: "The menu includes Paneer Butter Masala, Dal Tadka, Chana Masala, Veg Biriyani and breads. Live availability should be confirmed when ordering." },
-      { question: "Can I order Indian food for delivery?", answer: "Yes. Free delivery is available during current operating hours within the restaurant's delivery coverage. Contact the restaurant directly on WhatsApp to order." },
+      { question: "Can I order food for delivery?", answer: "Yes. Free delivery is available during current operating hours within the restaurant's delivery coverage. Contact the restaurant directly on WhatsApp to order." },
     ],
   },
   {
     slug: "family-indian-restaurant-near-dubai-mall",
-    title: "Family-Friendly Indian Restaurant Near Dubai Mall & Burj Khalifa",
-    excerpt: "Planning a family meal near Dubai Mall? Find shareable Indian grills, curries, biryani and vegetarian dishes minutes away in Business Bay.",
+    title: "Family-Friendly Restaurant Near Dubai Mall & Burj Khalifa",
+    excerpt: "Planning a family meal near Dubai Mall? Find shareable grills, curries, biryani, vegetarian dishes and international favourites minutes away in Business Bay.",
     date: "2026-08-05",
     img: "/images/blog/tandoor-grill-business-bay.png",
     content: [
-      { type: "h1", text: "Family-Friendly Indian Restaurant Near Dubai Mall & Burj Khalifa" },
-      { type: "p", text: "After a day at Dubai Mall, Burj Khalifa or the Downtown attractions, families often need a relaxed meal with enough variety for everyone. Mayur International Kitchen Dubai is a short drive away in Business Bay, with Indian, Pakistani, vegetarian and charcoal-grilled dishes suited to sharing." },
+      { type: "h1", text: "Family-Friendly Restaurant Near Dubai Mall & Burj Khalifa" },
+      { type: "p", text: "After a day at Dubai Mall, Burj Khalifa or the Downtown attractions, families often need a relaxed meal with enough variety for everyone. Mayur International Kitchen Dubai is a short drive away in Business Bay, with an international selection of vegetarian dishes, curries, rice dishes and charcoal grills suited to sharing." },
       { type: "h2", text: "A Menu That Works for Mixed Groups" },
       { type: "p", text: "One table can combine mild Butter Chicken (AED 19.25), Paneer Butter Masala (AED 18), Veg Biriyani (AED 12) and Chicken Biriyani (AED 13). Guests who prefer more heat can ask the team about spice levels before ordering." },
       { type: "h2", text: "Shareable Grills for Family Dinner" },
@@ -885,13 +885,13 @@ const BLOGS = [
   },
   {
     slug: "indian-food-delivery-business-bay-downtown",
-    title: "Indian Food Delivery in Business Bay & Downtown Dubai",
-    excerpt: "Order Indian food delivery in Business Bay and Downtown Dubai: biryani, curries, grills and vegetarian dishes from MIK Dubai.",
+    title: "Food Delivery in Business Bay & Downtown Dubai",
+    excerpt: "Order food delivery in Business Bay and Downtown Dubai: breakfast, biryani, curries, grills, fried rice and vegetarian dishes from MIK Dubai.",
     date: "2026-08-05",
     img: "/images/guides/filipino-food-guide-dubai.webp",
     content: [
-      { type: "h1", text: "Indian Food Delivery in Business Bay & Downtown Dubai" },
-      { type: "p", text: "Whether you are ordering breakfast for a Business Bay office, dinner at home or a meal to a Downtown Dubai hotel, Mayur International Kitchen Dubai offers free delivery of Indian and Pakistani food from The Metropolis Tower." },
+      { type: "h1", text: "Food Delivery in Business Bay & Downtown Dubai" },
+      { type: "p", text: "Whether you are ordering breakfast for a Business Bay office, dinner at home or a meal to a Downtown Dubai hotel, Mayur International Kitchen Dubai offers free delivery from its international menu at The Metropolis Tower." },
       { type: "h2", text: "Three Ways to Order" },
       { type: "p", text: "Contact MIK Dubai directly on WhatsApp, or find the restaurant on Deliveroo, Keeta and noon Food. Some delivery platforms may still display the former name Burger BAE Cafe; it is the same Business Bay location now operating as Mayur International Kitchen Dubai." },
       { type: "h2", text: "Best Indian Dishes for Delivery" },
@@ -916,14 +916,14 @@ const GUIDES = [
   {
     slug: "indians-in-dubai",
     audience: "India",
-    title: "Indian Food in Dubai for Indians",
+    title: "A Taste of Home in Dubai for Indian Visitors",
     subtitle: "Indian visitors can find familiar biryani, dal, dosa, paneer and chai at Mayur International Kitchen in Business Bay near Burj Khalifa.",
     img: "/images/guides/indian-food-guide-dubai.png",
     content: [
-      { type: "h1", text: "Indian Food in Dubai for Indians — A Taste of Home" },
-      { type: "p", text: "Whether you're an Indian expat in Business Bay or a tourist on a short visit, finding food that tastes exactly like home can be a challenge in Dubai. At Mayur International Kitchen Dubai (MIK’D¹), we've brought the full breadth of Indian home cooking to the heart of Business Bay." },
+      { type: "h1", text: "A Taste of Home in Dubai for Indian Visitors" },
+      { type: "p", text: "Whether you're an Indian expat in Business Bay or a tourist on a short visit, finding food that tastes exactly like home can be a challenge in Dubai. The wider international menu at Mayur International Kitchen Dubai (MIK’D¹) includes a generous selection of familiar Indian home-style dishes." },
       { type: "h2", text: "Why MIK Dubai Feels Like Home" },
-      { type: "p", text: "Chef Mayur Srivastava started cooking at age 6 in his mother's kitchen in India. After training at the Taj, Oberoi, Marriott, and Westin, he opened his first restaurant in Taipei in 2011. The food at MIK is not adapted for foreign tastes — it is authentic Indian cooking, made with imported spices, fresh ingredients, and genuine technique." },
+      { type: "p", text: "Chef Mayur Srivastava started cooking at age 6 in his mother's kitchen in India. After training at the Taj, Oberoi, Marriott, and Westin, he opened his first restaurant in Taipei in 2011. MIK's Indian selections preserve genuine techniques and bold flavours while sitting alongside a wide range of international choices." },
       { type: "h2", text: "Dishes You'll Find Here (Just Like Home)" },
       { type: "li", text: "Dal Tadka — AED 8.50" },
       { type: "li", text: "Chana Masala — AED 8" },
@@ -941,11 +941,11 @@ const GUIDES = [
   {
     slug: "pakistanis-in-dubai",
     audience: "Pakistan",
-    title: "Indian & Pakistani Food in Dubai for Pakistanis",
+    title: "A Taste of Home in Dubai for Pakistani Visitors",
     subtitle: "A Business Bay guide for Pakistani visitors seeking karahi, pulao, grills, nihari and fresh breads at Mayur International Kitchen Dubai.",
     img: "/images/guides/pakistani-food-guide-dubai.png",
     content: [
-      { type: "h1", text: "Indian & Pakistani Food in Dubai for Pakistanis" },
+      { type: "h1", text: "A Taste of Home in Dubai for Pakistani Visitors" },
       { type: "p", text: "Dubai has a large and proud Pakistani community — and Pakistani food culture is deeply embedded in the city's dining scene. At Mayur International Kitchen Dubai, we honour the shared culinary heritage of the subcontinent with dishes that Pakistanis will immediately recognise as authentic." },
       { type: "h2", text: "Pakistani-Favourite Dishes at MIK Dubai" },
       { type: "h3", text: "Karahi" },
@@ -969,11 +969,11 @@ const GUIDES = [
   {
     slug: "bangladeshis-in-dubai",
     audience: "Bangladesh",
-    title: "Indian Food in Dubai for Bangladeshis",
+    title: "A Taste of Home in Dubai for Bangladeshi Visitors",
     subtitle: "A Dubai dining guide for Bangladeshi visitors featuring biryani, fish curry, dal and affordable meals in Business Bay near Downtown.",
     img: "/images/guides/bangladeshi-food-guide-dubai.png",
     content: [
-      { type: "h1", text: "Indian Food in Dubai for Bangladeshis — Familiar Flavours" },
+      { type: "h1", text: "A Taste of Home in Dubai for Bangladeshi Visitors" },
       { type: "p", text: "For Bangladeshis living or visiting Dubai, finding food that feels familiar — rice-based, fish-forward, moderately spiced — can sometimes be a challenge. At Mayur International Kitchen Dubai, our menu spans the full subcontinent and includes many dishes that will feel like home." },
       { type: "h2", text: "Familiar Dishes for Bangladeshis" },
       { type: "h3", text: "Rice Dishes" },
@@ -998,13 +998,13 @@ const GUIDES = [
   {
     slug: "russians-in-dubai",
     audience: "Russia",
-    title: "Indian Food in Dubai: Guide for Russian Tourists",
-    subtitle: "A beginner-friendly Indian food guide for Russian visitors, with mild dishes, current prices and directions to Business Bay near Dubai Mall.",
+    title: "Dubai Food Guide for Russian Tourists",
+    subtitle: "A beginner-friendly guide to MIK Dubai's international menu for Russian visitors, with mild dishes, current prices and directions near Dubai Mall.",
     img: "/images/guides/russian-visitor-indian-food-guide-dubai.png",
     content: [
-      { type: "h1", text: "Indian Food in Dubai: Guide for Russian Tourists" },
-      { type: "p", text: "Индийская еда в Дубае для российских туристов — Russian tourists are one of Dubai's largest visitor groups, and many are curious about Indian food but unsure where to start. At Mayur International Kitchen Dubai, we welcome first-time Indian food adventurers with a menu ranging from mild and creamy to bold and aromatic." },
-      { type: "h2", text: "Start Here: Your First Indian Meal" },
+      { type: "h1", text: "Dubai Food Guide for Russian Tourists" },
+      { type: "p", text: "Индийская еда в Дубае для российских туристов — Russian tourists are one of Dubai's largest visitor groups, and many are curious about Indian food but unsure where to start. Mayur International Kitchen Dubai's international menu includes Indian selections ranging from mild and creamy to bold and aromatic." },
+      { type: "h2", text: "Start Here: An Easy First Meal" },
       { type: "h3", text: "Butter Chicken (AED 19.25) — Recommended for beginners" },
       { type: "p", text: "Murgh Makhani — tender chicken in a rich tomato and cream sauce. Mildly spiced, slightly sweet, very approachable. The most loved Indian dish worldwide." },
       { type: "h3", text: "Chicken Biryani (AED 13)" },
@@ -1027,12 +1027,12 @@ const GUIDES = [
   {
     slug: "western-tourists-dubai",
     audience: "International",
-    title: "Indian Food in Dubai for Western Tourists",
-    subtitle: "A practical Indian food guide for Western visitors, covering spice levels, popular dishes and dining in Business Bay near Burj Khalifa.",
+    title: "Dubai Dining Guide for Western Tourists",
+    subtitle: "A practical guide to MIK Dubai's international menu for Western visitors, covering spice levels, popular dishes and dining near Burj Khalifa.",
     img: "/images/guides/western-visitor-indian-food-guide-dubai.png",
     content: [
-      { type: "h1", text: "Indian Food in Dubai for Western Tourists — Your Essential Guide" },
-      { type: "p", text: "If you're visiting Dubai from Europe, North America, or Australia, the Indian food at Mayur International Kitchen Dubai is on another level. Fresh ingredients, authentic technique, and a menu that ranges from gently spiced to blazingly hot — whatever you prefer." },
+      { type: "h1", text: "Dubai Dining Guide for Western Tourists" },
+      { type: "p", text: "If you're visiting Dubai from Europe, North America or Australia, Mayur International Kitchen Dubai offers an international menu with plenty to explore. Its Indian selections use fresh ingredients and authentic techniques, with flavours ranging from gentle to fiery." },
       { type: "h2", text: "Your First Visit: What to Order" },
       { type: "h3", text: "Butter Chicken (AED 19.25)" },
       { type: "p", text: "The gold standard. Chicken in a rich, mildly sweet tomato-cream sauce. Goes perfectly with Garlic Naan (AED 8)." },
@@ -1072,7 +1072,7 @@ const GUIDES = [
       { type: "h2", text: "Filipino Food Near Downtown Dubai and Burj Khalifa" },
       { type: "p", text: "Mayur International Kitchen Dubai is at Shop No. 5, The Metropolis Tower on Burj Khalifa Street. The restaurant is convenient for Filipino professionals working in Business Bay, guests staying near Downtown Dubai and visitors exploring Burj Khalifa or Dubai Mall." },
       { type: "h2", text: "More Comfort-Food Choices" },
-      { type: "p", text: "Alongside Chixilog, guests can explore Chicken Fried Rice, Egg Fried Rice, grilled chicken, noodles, sandwiches and a wide range of Indian and Pakistani dishes. Ask the team for current Chixilog availability and recommendations that match your preferred spice level." },
+      { type: "p", text: "Alongside Chixilog, the international menu includes Chicken Fried Rice, Egg Fried Rice, grilled chicken, noodles, sandwiches and a wide range of South Asian favourites. Ask the team for current Chixilog availability and recommendations that match your preferred spice level." },
       { type: "h2", text: "Opening Hours, Free Delivery and Contact" },
       { type: "p", text: "Open daily from 06:00 to 23:30 hrs. Visit Shop No. 5, The Metropolis Tower, Burj Khalifa Street, Business Bay, Dubai, or order free delivery within the restaurant's delivery coverage. Call or WhatsApp 054 996 6937 to confirm Chixilog availability and place your order." },
     ],
@@ -1517,7 +1517,6 @@ function BrandStoryGrid() {
         <div className="mb-10 text-center">
           <p className="mb-3 text-xs font-bold uppercase tracking-[0.32em] text-[#C9600A]">The MIK’D¹ philosophy</p>
           <h2 className="text-3xl font-bold text-[#1A0A00] md:text-5xl" style={{ fontFamily: "'Biryani', sans-serif" }}>Tradition, Care & a Taste of Dubai</h2>
-          <p className="mx-auto mt-3 max-w-2xl text-[#7A5C40]">Six illustrations, one promise: thoughtful food rooted in India and made for modern Dubai.</p>
         </div>
         <div className="-mx-5 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-5 md:mx-0 md:grid md:grid-cols-2 md:overflow-visible md:px-0 lg:grid-cols-3">
           {BRAND_PANELS.map((panel) => (
@@ -1566,7 +1565,7 @@ function Footer() {
         <div className="grid gap-10 md:grid-cols-[1.15fr_0.8fr_1fr]">
           <div>
             <img src={logoImg} alt="Mayur International Kitchen Dubai" className="h-20 w-20 object-contain" />
-            <p className="mt-5 max-w-sm text-sm leading-7 text-[#7A5C40]">Authentic Indian food from Chef Mayur, served daily in the heart of Business Bay, Dubai.</p>
+            <p className="mt-5 max-w-sm text-sm leading-7 text-[#7A5C40]">International flavours from Chef Mayur, served all day in the heart of Business Bay, Dubai.</p>
             <a
               href={INSTAGRAM_URL}
               target="_blank"
@@ -1796,7 +1795,7 @@ function HomePage() {
           Our Most-Loved Dishes
         </h2>
         <p className="text-center text-[#7A5C40] mb-12 max-w-xl mx-auto">
-          From slow-cooked Dum Biryani to charcoal-grilled whole chicken — every dish is made fresh, every single day.
+          Explore international dining in Business Bay, Dubai—from slow-cooked Dum biryani and charcoal-grilled chicken to shawarma, fried rice, noodles, burgers, vegetarian dishes and all-day breakfast, all prepared fresh daily.
         </p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {FEATURED.slice(0, 3).map((dish) => {
@@ -1881,7 +1880,7 @@ function HomePage() {
 
       {/* Why MIK */}
       <section className="py-20 px-4 max-w-[1600px] mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12" style={{ fontFamily: "'Biryani', sans-serif", color: "#1E0F00" }}>
+        <h2 className="text-center uppercase leading-none text-[#1E0F00] mb-12" style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: "clamp(2.8rem, 5vw, 4.5rem)", letterSpacing: "0.025em" }}>
           Why Choose Mayur International Kitchen?
         </h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -1895,8 +1894,8 @@ function HomePage() {
               <div className="w-14 h-14 mb-5 mx-auto flex items-center justify-center rounded-2xl transition-transform duration-300 group-hover:scale-105" style={{ background: "linear-gradient(145deg, #FFF7D6, #F4E5A4)", color: "#9A7000" }}>
                 <p.icon size={27} strokeWidth={1.8} aria-hidden="true" />
               </div>
-              <h3 className="font-bold text-lg mb-2" style={{ fontFamily: "'Biryani', sans-serif", color: "#1E0F00" }}>{p.title}</h3>
-              <p className="text-sm text-[#7A5C40]">{p.desc}</p>
+              <h3 className="mb-3 uppercase leading-none text-[#1E0F00]" style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: "1.65rem", letterSpacing: "0.035em" }}>{p.title}</h3>
+              <p className="text-[0.95rem] leading-7 text-[#604B39]" style={{ fontFamily: "'DM Sans', sans-serif" }}>{p.desc}</p>
             </div>
           ))}
         </div>
@@ -1908,7 +1907,7 @@ function HomePage() {
           <div>
             <div className="mb-7">
               <div className="mb-2 text-xs font-bold uppercase tracking-[0.24em] text-[#8A3500]">Delivery partners</div>
-              <h2 className="text-3xl font-bold text-[#1E0F00]" style={{ fontFamily: "'Biryani', sans-serif" }}>Order Mayur Kitchen Online</h2>
+              <h2 className="text-3xl font-bold text-[#1E0F00]" style={{ fontFamily: "'Biryani', sans-serif" }}>Order Mayur International Kitchen Online</h2>
               <p className="mt-2 max-w-2xl text-sm text-[#7A5C40]">Some delivery apps still show our former name, Burger BAE Cafe. The Metropolis Tower location and phone number identify the same restaurant.</p>
             </div>
             <DeliveryLinks />
@@ -1921,30 +1920,30 @@ function HomePage() {
           <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#8A3500]">Eat local in Dubai</p>
           <div className="mt-3 grid gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
             <h2 id="business-bay-dining-title" className="max-w-4xl uppercase leading-[0.95] text-[#1A0A00]" style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: "clamp(3rem, 6vw, 6rem)" }}>
-              Indian Dining in Business Bay, Minutes from Downtown Dubai
+              International Dining in Business Bay, Minutes from Downtown Dubai
             </h2>
             <p className="max-w-2xl text-base leading-8 text-[#6D5948]">
-              Mayur International Kitchen Dubai serves authentic Indian food on Burj Khalifa Street, convenient for guests from Burj Khalifa, Dubai Mall, Dubai Canal, Bay Square, Executive Towers, DIFC and Dubai Design District.
+              Mayur International Kitchen Dubai serves a diverse all-day menu on Burj Khalifa Street, convenient for guests from Burj Khalifa, Dubai Mall, Dubai Canal, Bay Square, Executive Towers, DIFC and Dubai Design District.
             </p>
           </div>
 
           <div className="mt-10 grid border-2 border-[#1A0A00] md:grid-cols-3">
             <article className="p-6 md:border-r-2 md:border-[#1A0A00] lg:p-8">
               <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#8A3500]">From 06:00</p>
-              <h3 className="mt-3 text-2xl font-bold text-[#1A0A00]">Indian Breakfast & Chai</h3>
+              <h3 className="mt-3 text-2xl font-bold text-[#1A0A00]">All-Day Breakfast & Chai</h3>
               <p className="mt-3 leading-7 text-[#6D5948]">Start the day with dosa, idli, paratha, egg dishes or karak chai—an easy breakfast stop for Business Bay offices and visitors near Dubai Mall.</p>
               <Link to="/menu" className="mt-5 inline-block border-b-2 border-[#FF5C00] py-2 text-sm font-bold uppercase tracking-[0.12em] hover:text-[#FF5C00]">Explore breakfast dishes</Link>
             </article>
             <article className="border-y-2 border-[#1A0A00] p-6 md:border-y-0 md:border-r-2 lg:p-8">
               <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#8A3500]">Midday</p>
               <h3 className="mt-3 text-2xl font-bold text-[#1A0A00]">Business Lunch in Business Bay</h3>
-              <p className="mt-3 leading-7 text-[#6D5948]">Choose biryani, curries, grills and fresh breads for a quick Indian lunch, an office meal or a relaxed business meeting near Downtown Dubai and DIFC.</p>
+              <p className="mt-3 leading-7 text-[#6D5948]">Choose biryani, curries, grills and fresh breads for a quick lunch, an office meal or a relaxed business meeting near Downtown Dubai and DIFC.</p>
               <Link to="/contact" className="mt-5 inline-block border-b-2 border-[#FF5C00] py-2 text-sm font-bold uppercase tracking-[0.12em] hover:text-[#FF5C00]">Plan your visit</Link>
             </article>
             <article className="p-6 lg:p-8">
               <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#8A3500]">Lunch & dinner</p>
               <h3 className="mt-3 text-2xl font-bold text-[#1A0A00]">Family & Vegetarian Dining</h3>
-              <p className="mt-3 leading-7 text-[#6D5948]">Share paneer, dal, vegetarian biryani, tandoori grills and family favourites at a welcoming Indian restaurant near Burj Khalifa and Dubai Mall.</p>
+              <p className="mt-3 leading-7 text-[#6D5948]">Share paneer, dal, vegetarian biryani, charcoal grills and global family favourites at a welcoming international restaurant near Burj Khalifa and Dubai Mall.</p>
               <Link to="/tourist-guide" className="mt-5 inline-block border-b-2 border-[#FF5C00] py-2 text-sm font-bold uppercase tracking-[0.12em] hover:text-[#FF5C00]">Read visitor guides</Link>
             </article>
           </div>
@@ -2084,7 +2083,7 @@ function MenuPage() {
             Our Full Menu
           </h1>
           <h2 className="text-white/80 max-w-xl mx-auto mb-8 font-normal" style={{ fontSize: "clamp(1rem, 2vw, 1.25rem)" }}>
-            100+ dishes across Indian, Pakistani, and International cuisines — all prices in AED, 100% Halal.
+            100+ dishes across Indian, Pakistani, and international cuisines — 100% Halal.
           </h2>
           <div className="flex flex-wrap gap-3 justify-center">
             <ReservationWhatsAppButtons primaryOnly />
@@ -2332,7 +2331,7 @@ function OurStoryPage() {
               Our <span className="text-[#FF5C00]">Story</span>
             </h1>
             <p className="mt-6 max-w-lg text-base leading-8 text-white/90 [text-shadow:0_2px_10px_rgba(0,0,0,0.9)] sm:text-lg md:text-xl">
-              15 years. 15 branches. One unwavering passion for authentic Indian cuisine—from Taipei to Dubai.
+              15 years. 15 branches. One unwavering passion for bringing people together through food—from Taipei to Dubai.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <NeonButton href={DIRECTIONS_URL} target="_blank" rel="noopener noreferrer" icon={MapPin}>
@@ -2731,7 +2730,7 @@ function BlogIndexPage() {
             Restaurant Blog & Guides
           </h1>
           <h2 className="text-white/80 max-w-xl mx-auto mb-8 font-normal" style={{ fontSize: "clamp(1rem, 2vw, 1.25rem)" }}>
-            Tips, guides, and food stories — Indian food in Dubai explained.
+            Tips, guides, and food stories — Dubai dining made easier.
           </h2>
           <div className="flex flex-wrap gap-3 justify-center">
             <NeonButton to="/menu" secondary>View Full Menu</NeonButton>
@@ -2824,7 +2823,7 @@ function TouristGuideIndexPage() {
             className="font-bold text-white mb-4 leading-tight"
             style={{ fontFamily: "'Biryani', sans-serif", fontSize: "clamp(2.15rem, 6vw, 4rem)" }}
           >
-            Visitor Guides — Indian Food in Dubai
+            Visitor Guides — Eating Well in Dubai
           </h1>
           <h2 className="text-white/80 max-w-xl mx-auto mb-8 font-normal" style={{ fontSize: "clamp(1rem, 2vw, 1.25rem)" }}>
             Tailored guides for every visitor — including Indian, Pakistani, Bangladeshi, Filipino, Russian, and international guests.
@@ -2986,7 +2985,7 @@ function ContactPage() {
             </div>
             <div>
               <p className="text-lg leading-8 text-[#5E4938]">
-                Mayur International Kitchen Business Bay is an Indian restaurant near Burj Khalifa and Dubai Mall, serving Indian breakfast, business lunch, family dining, biryani, butter chicken, paneer dishes, tandoori grills, vegetarian food, fresh breads and chai.
+                Mayur International Kitchen Business Bay is an international restaurant near Burj Khalifa and Dubai Mall, serving all-day breakfast, business lunch, family dining, biryani, curries, charcoal grills, fried rice, noodles, vegetarian food, fresh breads and chai.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <NeonButton to="/menu" small>View Menu & Prices</NeonButton>
