@@ -9,6 +9,7 @@ const routes = [
   "/offers",
   "/gallery",
   "/blog",
+  "/blog/biryani-delivery-dubai",
   "/blog/best-indian-food-dubai-business-bay",
   "/blog/biryani-near-burj-khalifa",
   "/blog/halal-restaurant-dubai-downtown",
