@@ -96,7 +96,7 @@ const RESERVATION_WHATSAPP_NUMBERS = [
   { international: "971549966938", display: "054 996 6938" },
 ];
 const RESERVATION_MESSAGE = "Hi, my name is [Your Name] and I'd like to reserve a table for [Number of People] people.";
-const GA_MEASUREMENT_ID = import.meta.env.VITE_GA_MEASUREMENT_ID as string | undefined;
+const GA_MEASUREMENT_ID = (import.meta.env.VITE_GA_MEASUREMENT_ID as string | undefined) || "G-Q33QGY4V1V";
 const DELIVERY_LINKS = [
   { name: "Deliveroo", href: "https://deliveroo.ae/en/menu/dubai/dubai-canal-walk/burger-bae-cafe", note: "Listed as Burger BAE Cafe · delivery prices may differ" },
   { name: "Keeta", href: "https://www.mykeeta.com/", note: "Open Keeta and search Mayur International Kitchen" },
