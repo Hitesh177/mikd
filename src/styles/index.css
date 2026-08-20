@@ -2,12 +2,38 @@
 @import './tailwind.css';
 @import './theme.css';
 
+.page-video-hero {
+  height: clamp(360px, 48vh, 520px) !important;
+  min-height: 360px !important;
+  max-height: 520px !important;
+}
+
+.page-video-content h1 {
+  font-size: clamp(2.25rem, 4.5vw, 3.25rem) !important;
+  line-height: 1.05;
+}
+
+.home-hero {
+  height: min(78vh, 760px) !important;
+  min-height: 500px !important;
+}
+
+.story-hero {
+  height: min(68svh, 720px) !important;
+  min-height: 500px !important;
+  max-height: 720px !important;
+}
+
+.story-hero-title {
+  font-size: clamp(4rem, 8vw, 7rem) !important;
+}
+
 @media (max-width: 767px) {
   .page-video-hero {
     display: block;
-    height: 72svh !important;
-    min-height: 560px !important;
-    max-height: 680px !important;
+    height: 52svh !important;
+    min-height: 400px !important;
+    max-height: 500px !important;
   }
 
   .page-video-media {
@@ -27,7 +53,7 @@
 
   .page-video-content h1 {
     max-width: 19ch;
-    font-size: clamp(2.15rem, 9vw, 3.25rem) !important;
+    font-size: clamp(2rem, 8vw, 2.75rem) !important;
     line-height: 1.05;
   }
 
@@ -39,6 +65,21 @@
 
   .page-video-eyebrow {
     display: none;
+  }
+
+  .home-hero {
+    height: 68svh !important;
+    min-height: 480px !important;
+  }
+
+  .story-hero {
+    height: 60svh !important;
+    min-height: 460px !important;
+    max-height: 600px !important;
+  }
+
+  .story-hero-title {
+    font-size: clamp(3.5rem, 18vw, 5.25rem) !important;
   }
 
   .offers-dialog-shell {

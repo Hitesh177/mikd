@@ -33,7 +33,7 @@ import storyVintageMarigolds from "@/imports/story/vintage-marigolds.mp4";
 import storyVintageMarigoldsPoster from "@/imports/story/vintage-marigolds-poster.jpg";
 import storyKarahiParotta from "@/imports/story/karahi-parotta.jpg";
 import storyDubaiRestaurantExterior from "@/imports/story/mayur-international-kitchen-business-bay-exterior.webp";
-import featuredKarakChai from "@/imports/featured/karak-chai-mayur-international-kitchen.webp";
+import featuredKarakChai from "@/imports/featured/karak-chai-user.png";
 import brandAuthenticFlavors from "@/imports/brand-panels/authentic-flavors.png";
 import brandCraftedWithCare from "@/imports/brand-panels/crafted-with-care.png";
 import brandGoodFoodAnywhere from "@/imports/brand-panels/good-food-anywhere.png";
@@ -62,6 +62,7 @@ import {
   Instagram,
   Youtube,
   Facebook,
+  Linkedin,
   Search,
   Pause,
   Play,
@@ -79,6 +80,17 @@ const SITE_URL = "https://mayurindiankitchen.com";
 const DEFAULT_SOCIAL_IMAGE = `${SITE_URL}/images/mayur-international-kitchen-business-bay-social-preview.jpg`;
 const DIRECTIONS_URL = "https://www.google.com/maps/search/?api=1&query=Mayur%20International%20Kitchen%20Dubai%2C%20The%20Metropolis%20Tower%2C%20Business%20Bay%2C%20Dubai";
 const INSTAGRAM_URL = "https://www.instagram.com/mik.dubai?igsh=OG5hdWY2aGJsNjIx";
+const FACEBOOK_URL = "https://www.facebook.com/mayurindiankitchen";
+const X_URL = "https://x.com/miktaiwan";
+const LINKEDIN_URL = "https://tw.linkedin.com/in/mayur-srivastava-63b82a28";
+const YOUTUBE_URL = "https://www.youtube.com/channel/UClm27ApvEs_Ne4t_ZgOR79A";
+const SOCIAL_LINKS = [
+  { name: "Instagram", href: INSTAGRAM_URL, icon: Instagram },
+  { name: "Facebook", href: FACEBOOK_URL, icon: Facebook },
+  { name: "X", href: X_URL, icon: null },
+  { name: "LinkedIn", href: LINKEDIN_URL, icon: Linkedin },
+  { name: "YouTube", href: YOUTUBE_URL, icon: Youtube },
+];
 const RESERVATION_WHATSAPP_NUMBERS = [
   { international: "971549966937", display: "054 996 6937" },
   { international: "971549966938", display: "054 996 6938" },
@@ -127,7 +139,7 @@ const BUSINESS_BAY_LOCATION_FAQS = [
   { question: "Does Mayur International Kitchen have outdoor seating?", answer: "Outdoor tables may be available at the Business Bay location, depending on weather and daily operations. Contact the restaurant to confirm current outdoor seating availability before visiting." },
   { question: "What are the opening hours?", answer: "Mayur International Kitchen Dubai is open daily from 06:00 to 23:30 hrs. Service times can change on public holidays, so confirm before travelling on special dates." },
   { question: "What are the most popular dishes at Mayur International Kitchen Dubai?", answer: "Popular choices include chicken biryani, butter chicken, tandoori grills, paneer dishes, fresh breads and karak chai. Browse the live menu for current dishes and final AED prices." },
-  { question: "What cuisines does Mayur International Kitchen serve?", answer: "The international menu brings together Indian, Pakistani, South Asian and global favourites, including curries, biryani, charcoal grills, fried rice, noodles, burgers, sandwiches, breads and all-day breakfast choices." },
+  { question: "What cuisines does Mayur International Kitchen serve?", answer: "The international menu brings together Indian, Pakistani, South Asian and global favourites, including curries, biryani, charcoal grills, fried rice, noodles, burgers, sandwiches, breads and tasty breakfast choices." },
   { question: "Is Mayur International Kitchen suitable for large groups?", answer: "Larger groups are welcome when seating is available. Reserve through WhatsApp in advance and provide the party size, date and preferred time so the team can confirm arrangements." },
 ];
 const BRAND_PANELS = [
@@ -1039,30 +1051,29 @@ const GUIDES = [
   {
     slug: "russians-in-dubai",
     audience: "Russia",
-    title: "Dubai Food Guide for Russian Tourists",
-    subtitle: "A beginner-friendly guide to MIK Dubai's international menu for Russian visitors, with mild dishes, current prices and directions near Dubai Mall.",
-    img: "/images/guides/russian-visitor-indian-food-guide-dubai.png",
+    title: "Russian Food Guide in Dubai: Familiar Flavours at MIK",
+    subtitle: "From Borscht and Beef Stroganoff to Shashlik and Pelmeni, discover the closest familiar flavours on MIK Dubai's international menu.",
+    img: "/images/guides/russian-food-guide-dubai.webp",
     content: [
-      { type: "h1", text: "Dubai Food Guide for Russian Tourists" },
-      { type: "p", text: "Индийская еда в Дубае для российских туристов — Russian tourists are one of Dubai's largest visitor groups, and many are curious about Indian food but unsure where to start. Mayur International Kitchen Dubai's international menu includes Indian selections ranging from mild and creamy to bold and aromatic." },
-      { type: "h2", text: "Start Here: An Easy First Meal" },
-      { type: "h3", text: "Butter Chicken (AED 19.25) — Recommended for beginners" },
-      { type: "p", text: "Murgh Makhani — tender chicken in a rich tomato and cream sauce. Mildly spiced, slightly sweet, very approachable. The most loved Indian dish worldwide." },
-      { type: "h3", text: "Chicken Biryani (AED 13)" },
-      { type: "p", text: "Fragrant rice with spiced chicken — not overly hot, just beautifully aromatic." },
-      { type: "h3", text: "Garlic Naan (AED 8)" },
-      { type: "p", text: "Fluffy bread baked in a clay oven. Use it to scoop up curries — an experience in itself." },
-      { type: "h3", text: "Mango Lassi (AED 12)" },
-      { type: "p", text: "A sweet, chilled yogurt-mango drink. Refreshing and helps balance any spice." },
-      { type: "h2", text: "What Is Not Spicy at All" },
-      { type: "li", text: "Afghani Pulao — mildly sweet rice dish with meat and vegetables" },
-      { type: "li", text: "Paneer Butter Masala — cheese cubes in cream-tomato sauce" },
-      { type: "li", text: "Mango Shake (AED 15) — mango blended into a chilled shake" },
-      { type: "h2", text: "Getting to MIK Dubai" },
-      { type: "li", text: "From JBR/Marina: 20 min taxi" },
-      { type: "li", text: "From Dubai Mall/Burj Khalifa: 5 min taxi" },
-      { type: "li", text: "From Business Bay Metro Station: 8 min walk" },
-      { type: "p", text: "Call 054 996 6937 — English-speaking staff available." },
+      { type: "h1", text: "Russian Food Guide in Dubai — Familiar Flavours at MIK" },
+      { type: "p", text: "Добро пожаловать! Russian comfort food is known for warming soups, creamy sauces, grilled meat and satisfying filled dough. Mayur International Kitchen Dubai does not currently list Borscht, Okroshka, Solyanka, Beef Stroganoff, Shashlik or Pelmeni on its regular menu, but Russian visitors can find several dishes with familiar textures and cooking styles on our wider international menu." },
+      { type: "h2", text: "If You Love Borscht, Solyanka or Okroshka" },
+      { type: "p", text: "Borscht and Solyanka are hearty, layered soups, while chilled Okroshka is fresh and tangy. For a similarly comforting bowl, try slow-cooked Beef Nihari (AED 15) or warming Dal Tadka (AED 8.50). If you enjoy Okroshka's cooling dairy notes, order raita with your meal or choose a chilled Sweet or Salt Lassi (AED 10). These are flavour comparisons, not versions of the Russian originals." },
+      { type: "h2", text: "If Beef Stroganoff Is Your Comfort Food" },
+      { type: "p", text: "Guests who enjoy the tender beef and creamy sauce of Beef Stroganoff may appreciate Beef White Handi (AED 24), a mild, creamy South Asian beef dish. Beef Masala (AED 17) offers a tomato-and-spice alternative with a deeper aromatic profile. Ask for mild heat if you prefer gentler flavours." },
+      { type: "h2", text: "From Shashlik to Charcoal Kababs" },
+      { type: "p", text: "Shashlik fans will recognise the appeal of meat cooked over high heat until smoky and juicy. Mutton / Beef Kabab (AED 30), Chicken Kabab (AED 25) and charcoal-grilled chicken deliver that familiar grilled character with South Asian marinades and spices." },
+      { type: "h2", text: "If You Enjoy Pelmeni" },
+      { type: "p", text: "Pelmeni are not on the regular menu, but guests who enjoy compact, filled comfort food can try freshly prepared samosas. Aloo Samosa has a warmly spiced potato filling, while Chicken Samosa offers a savoury meat option, both wrapped in crisp pastry rather than boiled dough." },
+      { type: "h2", text: "A Mild First Order for Russian Visitors" },
+      { type: "li", text: "Butter Chicken (AED 19.25) — creamy tomato sauce and tender chicken" },
+      { type: "li", text: "Plain Naan (AED 3) — soft tandoor-baked bread for sharing" },
+      { type: "li", text: "Chicken Biriyani (AED 13) — fragrant rice with chicken and whole spices" },
+      { type: "li", text: "Mango Lassi (AED 12) — a sweet chilled yogurt drink that balances spice" },
+      { type: "h2", text: "Русским гостям: How to Order" },
+      { type: "p", text: "Tell the team «не остро» or simply ask for mild / no chilli when ordering. Availability can change, so contact the restaurant if you are looking for a Russian-inspired special or need help choosing a dish." },
+      { type: "h2", text: "Location, Hours and Contact" },
+      { type: "p", text: "Visit Shop No. 5, The Metropolis Tower, Burj Khalifa Street, Business Bay, Dubai. MIK Dubai is open daily from 06:00 to 23:30. Call or WhatsApp 054 996 6937 or 054 996 6938 for current availability, directions or delivery coverage." },
     ],
   },
   {
@@ -1225,7 +1236,7 @@ function SiteSeo() {
       description: "Mayur International Kitchen Dubai is an Indian restaurant in Business Bay serving Indian breakfast, biryani, curries, tandoori grills, vegetarian dishes, breads and chai near Burj Khalifa and Dubai Mall.",
       image: DEFAULT_SOCIAL_IMAGE,
       telephone: ["+971549966937", "+971549966938"],
-      sameAs: [INSTAGRAM_URL],
+      sameAs: SOCIAL_LINKS.map((social) => social.href),
       servesCuisine: ["Indian", "North Indian", "South Indian", "Pakistani", "Vegetarian"],
       priceRange: "AED",
       address: { "@type": "PostalAddress", streetAddress: "Shop No. 5, The Metropolis Tower, Burj Khalifa Street", addressLocality: "Business Bay", addressRegion: "Dubai", addressCountry: "AE" },
@@ -1358,6 +1369,10 @@ function Navbar() {
   const transparent = hasHero && !scrolled;
 
   useEffect(() => {
+    setOpen(false);
+  }, [location.pathname]);
+
+  useEffect(() => {
     if (!hasHero) { setScrolled(true); return; }
     const onScroll = () => setScrolled(window.scrollY > 80);
     onScroll();
@@ -1483,10 +1498,11 @@ function NeonButton({
     fontSize: small ? "0.95rem" : "1.1rem",
     backgroundColor: secondary ? (hover ? "#FF5C00" : "rgba(26, 10, 0, 0.88)") : "#FF5C00",
     color: secondary && !hover ? "#FFFFFF" : "#1A0A00",
-    boxShadow: hover ? "6px 6px 0px #1A0A00" : "4px 4px 0px #1A0A00",
-    border: `2px solid ${secondary ? "#FF5C00" : "#1A0A00"}`,
+    boxShadow: hover ? "0 10px 24px rgba(26, 10, 0, 0.22)" : "0 5px 14px rgba(26, 10, 0, 0.14)",
+    border: `1.5px solid ${secondary ? "#FF5C00" : "#1A0A00"}`,
+    borderRadius: "999px",
     letterSpacing: "0.12em",
-    transform: hover ? "translate(-2px, -2px)" : "translate(0, 0)",
+    transform: hover ? "translateY(-2px)" : "translateY(0)",
   };
   const className = `px-6 py-3 font-bold uppercase tracking-widest transition-all duration-150 inline-flex items-center gap-2 justify-center ${fullWidth ? "w-full" : ""}`;
   const content = (
@@ -1607,16 +1623,24 @@ function Footer() {
           <div>
             <img src={logoImg} alt="Mayur International Kitchen Dubai" className="h-20 w-20 object-contain" />
             <p className="mt-5 max-w-sm text-sm leading-7 text-[#7A5C40]">International flavours from Chef Mayur, served all day in the heart of Business Bay, Dubai.</p>
-            <a
-              href={INSTAGRAM_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-5 inline-flex min-h-11 items-center gap-2 border-b-2 border-[#FF5C00] py-2 text-sm font-bold transition-colors hover:text-[#FF5C00]"
-              aria-label="Follow Mayur International Kitchen Dubai on Instagram"
-            >
-              <Instagram size={20} aria-hidden="true" />
-              <span>@mik.dubai</span>
-            </a>
+            <div className="mt-5 flex flex-wrap gap-2" aria-label="Mayur International Kitchen social media">
+              {SOCIAL_LINKS.map((social) => {
+                const Icon = social.icon;
+                return (
+                  <a
+                    key={social.name}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex h-11 w-11 items-center justify-center rounded-full border-2 border-[#1A0A00] bg-white transition-colors hover:border-[#FF5C00] hover:bg-[#FF5C00] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#FF5C00]"
+                    aria-label={`Follow Mayur International Kitchen on ${social.name}`}
+                    title={social.name}
+                  >
+                    {Icon ? <Icon size={20} aria-hidden="true" /> : <span className="text-lg font-bold" aria-hidden="true">𝕏</span>}
+                  </a>
+                );
+              })}
+            </div>
           </div>
 
           <nav aria-label="Footer navigation" className="grid grid-cols-2 gap-x-7 text-sm font-semibold">
@@ -1668,7 +1692,7 @@ function HeroCarousel() {
   const next = () => { setCurrent((c) => (c + 1) % SLIDES.length); resetTimer(); };
 
   return (
-    <section className="relative h-[92vh] min-h-[560px] overflow-hidden">
+    <section className="home-hero relative h-[92vh] min-h-[560px] overflow-hidden">
       {SLIDES.map((s, i) => (
         <div key={i} className="absolute inset-0 transition-opacity duration-1000" style={{ opacity: i === current ? 1 : 0 }}>
           <img
@@ -1698,9 +1722,9 @@ function HeroCarousel() {
               Mayur International Kitchen Dubai
             </div>
             {i === current ? (
-              <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight" style={{ fontFamily: "'Biryani', sans-serif" }}>{s.h1}</h1>
+              <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight" style={{ fontFamily: "'Biryani', sans-serif" }}>{s.h1}</h1>
             ) : (
-              <p aria-hidden="true" className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight" style={{ fontFamily: "'Biryani', sans-serif" }}>{s.h1}</p>
+              <p aria-hidden="true" className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight" style={{ fontFamily: "'Biryani', sans-serif" }}>{s.h1}</p>
             )}
             <p className="text-white/85 text-lg md:text-xl mb-7 max-w-2xl">{s.h2}</p>
           </>
@@ -1836,7 +1860,7 @@ function HomePage() {
           Our Most-Loved Dishes
         </h2>
         <p className="text-center text-[#7A5C40] mb-12 max-w-xl mx-auto">
-          Explore international dining in Business Bay, Dubai—from slow-cooked Dum biryani and charcoal-grilled chicken to shawarma, fried rice, noodles, burgers, vegetarian dishes and all-day breakfast, all prepared fresh daily.
+          Explore international dining in Business Bay, Dubai—from slow-cooked Dum biryani and charcoal-grilled chicken to shawarma, fried rice, noodles, burgers, vegetarian dishes and delicious breakfast favourites, all prepared fresh daily.
         </p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {FEATURED.slice(0, 3).map((dish) => {
@@ -1913,7 +1937,7 @@ function HomePage() {
         <img src={brandCraftedWithCare} alt="Crafted with care and served with pride at Mayur International Kitchen Dubai" className="mx-auto w-full max-w-[460px] rounded-2xl shadow-lg ring-1 ring-black/10" loading="lazy" />
         <div>
           <p className="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-[#8A3500]">Made with intention</p>
-          <h2 className="text-4xl font-bold leading-tight text-[#1A0A00] md:text-6xl" style={{ fontFamily: "'Biryani', sans-serif" }}>Crafted With Care.<br /><span className="text-[#2F6F63]">Served With Pride.</span></h2>
+          <h2 className="text-3xl font-bold leading-tight text-[#1A0A00] md:text-5xl" style={{ fontFamily: "'Biryani', sans-serif" }}>Crafted With Care.<br /><span className="text-[#2F6F63]">Served With Pride.</span></h2>
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-[#7A5C40]">From the first spice hitting the pan to the final plate leaving our kitchen, every detail matters.</p>
           <div className="mt-7"><NeonButton to="/our-story" small>Discover Our Story</NeonButton></div>
         </div>
@@ -1971,8 +1995,8 @@ function HomePage() {
           <div className="mt-10 grid border-2 border-[#1A0A00] md:grid-cols-3">
             <article className="p-6 md:border-r-2 md:border-[#1A0A00] lg:p-8">
               <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#8A3500]">From 06:00</p>
-              <h3 className="mt-3 text-2xl font-bold text-[#1A0A00]">All-Day Breakfast & Chai</h3>
-              <p className="mt-3 leading-7 text-[#6D5948]">Start the day with dosa, idli, paratha, egg dishes or karak chai—an easy breakfast stop for Business Bay offices and visitors near Dubai Mall.</p>
+              <h3 className="mt-3 text-2xl font-bold text-[#1A0A00]">Delicious Breakfast & Chai</h3>
+              <p className="mt-3 leading-7 text-[#6D5948]">Start your morning with tasty dosa, idli, paratha, egg dishes or karak chai. Breakfast-item availability changes during the day, so call ahead if you want a particular dish.</p>
               <Link to="/menu" className="mt-5 inline-block border-b-2 border-[#FF5C00] py-2 text-sm font-bold uppercase tracking-[0.12em] hover:text-[#FF5C00]">Explore breakfast dishes</Link>
             </article>
             <article className="border-y-2 border-[#1A0A00] p-6 md:border-y-0 md:border-r-2 lg:p-8">
@@ -2003,6 +2027,17 @@ function HomePage() {
                     <span aria-hidden="true" className="text-2xl leading-none text-[#FF5C00] transition-transform group-open:rotate-45">+</span>
                   </summary>
                   <p className="max-w-3xl pt-4 leading-7 text-[#6D5948]">{item.answer}</p>
+                  {item.question === "Where is Mayur International Kitchen in Business Bay?" && (
+                    <a
+                      href={DIRECTIONS_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-3 inline-flex min-h-11 items-center gap-2 border-b-2 border-[#FF5C00] py-2 text-sm font-bold uppercase tracking-[0.1em] transition-colors hover:text-[#FF5C00]"
+                    >
+                      <MapPin size={17} aria-hidden="true" />
+                      Open in Google Maps
+                    </a>
+                  )}
                 </details>
               ))}
             </div>
@@ -2351,7 +2386,7 @@ function FoodCarousel() {
 function OurStoryPage() {
   return (
     <main className="min-h-screen" style={{ backgroundColor: "#ECEAE5" }}>
-      <section className="relative h-[100svh] min-h-[620px] max-h-[1080px] overflow-hidden border-b-[5px] border-[#1A0A00] bg-[#1A0A00]" aria-labelledby="our-story-title">
+      <section className="story-hero relative overflow-hidden border-b-[5px] border-[#1A0A00] bg-[#1A0A00]" aria-labelledby="our-story-title">
         <img
           src={storyDubaiRestaurantExterior}
           alt="Mayur International Kitchen Dubai restaurant exterior and outdoor seating in Business Bay"
@@ -2368,7 +2403,7 @@ function OurStoryPage() {
             <p className="mb-4 uppercase text-[#FF5C00] [text-shadow:0_2px_12px_rgba(0,0,0,0.9)]" style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: "1rem", letterSpacing: "0.35em" }}>
               Since 2011
             </p>
-            <h1 id="our-story-title" className="max-w-[7ch] uppercase leading-[0.86] text-white [text-shadow:0_3px_20px_rgba(0,0,0,0.65)]" style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: "clamp(4.75rem, 10vw, 9rem)", letterSpacing: "0.01em" }}>
+            <h1 id="our-story-title" className="story-hero-title max-w-[7ch] uppercase leading-[0.9] text-white [text-shadow:0_3px_20px_rgba(0,0,0,0.65)]" style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.01em" }}>
               Our <span className="text-[#FF5C00]">Story</span>
             </h1>
             <p className="mt-6 max-w-lg text-base leading-8 text-white/90 [text-shadow:0_2px_10px_rgba(0,0,0,0.9)] sm:text-lg md:text-xl">
@@ -2383,7 +2418,6 @@ function OurStoryPage() {
         </div>
       </section>
 
-      <FoodCarousel />
       <BrandStoryGrid />
 
       {/* Editorial Spread */}
@@ -2803,10 +2837,10 @@ function BlogPostPage() {
 
   return (
     <main className="min-h-screen">
-      <div className="relative h-64 md:h-80 overflow-hidden">
+      <div className="relative h-52 md:h-64 overflow-hidden">
         <img src={post.img} alt={post.title} className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/55 flex items-end pb-10 px-6 justify-center">
-          <h1 className="text-3xl md:text-5xl font-bold text-white text-center max-w-4xl" style={{ fontFamily: "'Biryani', sans-serif" }}>{post.title}</h1>
+          <h1 className="text-2xl md:text-4xl font-bold text-white text-center max-w-4xl" style={{ fontFamily: "'Biryani', sans-serif" }}>{post.title}</h1>
         </div>
       </div>
       <div className="w-full px-6 md:px-12 py-12">
@@ -2899,12 +2933,12 @@ function TouristGuideDetailPage() {
 
   return (
     <main className="min-h-screen">
-      <div className="relative h-64 md:h-80 overflow-hidden">
+      <div className="relative h-52 md:h-64 overflow-hidden">
         <img src={guide.img} alt={guide.title} className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/55 flex items-end pb-10 px-6 justify-center">
           <div className="text-center">
             <div className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[#FF5C00]">Visitor guide for {guide.audience}</div>
-            <h1 className="text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: "'Biryani', sans-serif" }}>{guide.title}</h1>
+            <h1 className="text-2xl md:text-3xl font-bold text-white" style={{ fontFamily: "'Biryani', sans-serif" }}>{guide.title}</h1>
           </div>
         </div>
       </div>
@@ -3026,7 +3060,7 @@ function ContactPage() {
             </div>
             <div>
               <p className="text-lg leading-8 text-[#5E4938]">
-                Mayur International Kitchen Business Bay is an international restaurant near Burj Khalifa and Dubai Mall, serving all-day breakfast, business lunch, family dining, biryani, curries, charcoal grills, fried rice, noodles, vegetarian food, fresh breads and chai.
+                Mayur International Kitchen Business Bay is an international restaurant near Burj Khalifa and Dubai Mall, serving delicious breakfast choices, business lunch, family dining, biryani, curries, charcoal grills, fried rice, noodles, vegetarian food, fresh breads and chai.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <NeonButton to="/menu" small>View Menu & Prices</NeonButton>
