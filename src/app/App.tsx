@@ -97,6 +97,7 @@ const RESERVATION_WHATSAPP_NUMBERS = [
 ];
 const RESERVATION_MESSAGE = "Hi, my name is [Your Name] and I'd like to reserve a table for [Number of People] people.";
 const GA_MEASUREMENT_ID = (import.meta.env.VITE_GA_MEASUREMENT_ID as string | undefined) || "G-Q33QGY4V1V";
+const CLARITY_PROJECT_ID = "y5c5kypd1d";
 const DELIVERY_LINKS = [
   { name: "Deliveroo", href: "https://deliveroo.ae/en/menu/dubai/dubai-canal-walk/burger-bae-cafe", note: "Listed as Burger BAE Cafe · delivery prices may differ" },
   { name: "Keeta", href: "https://www.mykeeta.com/", note: "Open Keeta and search Mayur International Kitchen" },
@@ -155,6 +156,7 @@ declare global {
   interface Window {
     dataLayer?: unknown[];
     gtag?: (...args: unknown[]) => void;
+    clarity?: ((...args: unknown[]) => void) & { q?: unknown[][] };
   }
 }
 
@@ -1299,7 +1301,7 @@ function Analytics() {
   }, []);
 
   useEffect(() => {
-    if (!GA_MEASUREMENT_ID || consent !== "accepted") return;
+    if (consent !== "accepted") return;
     if (!document.querySelector('script[data-mik-analytics]')) {
       const script = document.createElement("script");
       script.async = true;
@@ -1312,6 +1314,18 @@ function Analytics() {
       window.gtag("config", GA_MEASUREMENT_ID, { anonymize_ip: true, send_page_view: false });
     }
     window.gtag?.("event", "page_view", { page_path: pathname, page_title: document.title });
+
+    if (!document.querySelector('script[data-mik-clarity]')) {
+      window.clarity = window.clarity || Object.assign(
+        (...args: unknown[]) => window.clarity?.q?.push(args),
+        { q: [] as unknown[][] },
+      );
+      const clarityScript = document.createElement("script");
+      clarityScript.async = true;
+      clarityScript.src = `https://www.clarity.ms/tag/${CLARITY_PROJECT_ID}`;
+      clarityScript.dataset.mikClarity = "true";
+      document.head.appendChild(clarityScript);
+    }
   }, [pathname, consent]);
 
   useEffect(() => {
