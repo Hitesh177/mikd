@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from "react";
+import { Analytics as VercelAnalytics } from "@vercel/analytics/react";
 import logoImg from "@/imports/mayur-international-kitchen-dubai-logo.png";
 import galleryTandooriRotiBasket from "@/imports/gallery/tandoori-roti-basket.jpg";
 import galleryGarlicNaan from "@/imports/gallery/garlic-naan.jpg";
@@ -3319,6 +3320,7 @@ export default function App() {
       <Footer />
       <OffersPopup />
       <CookieConsent />
+      <VercelAnalytics />
     </BrowserRouter>
   );
 }
