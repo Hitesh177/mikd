@@ -100,9 +100,30 @@ const RESERVATION_MESSAGE = "Hi, my name is [Your Name] and I'd like to reserve 
 const GA_MEASUREMENT_ID = (import.meta.env.VITE_GA_MEASUREMENT_ID as string | undefined) || "G-Q33QGY4V1V";
 const CLARITY_PROJECT_ID = "y5c5kypd1d";
 const DELIVERY_LINKS = [
-  { name: "Deliveroo", href: "https://deliveroo.ae/en/menu/dubai/dubai-canal-walk/burger-bae-cafe", note: "Listed as Burger BAE Cafe · delivery prices may differ" },
-  { name: "Keeta", href: "https://www.mykeeta.com/", note: "Open Keeta and search Mayur International Kitchen" },
-  { name: "noon Food", href: "https://food.noon.com/uae-en/", note: "Open noon Food and search Mayur International Kitchen" },
+  {
+    name: "Talabat",
+    href: "https://www.talabat.com/uae/restaurant/1119852/mayur-international-kitchen?aid=1252",
+    note: "Order Mayur International Kitchen on Talabat",
+    qr: "/images/order/talabat-order-qr.png",
+    accent: "#FF5A00",
+    icon: ShoppingBag,
+  },
+  {
+    name: "Deliveroo",
+    href: "https://deliveroo.ae/menu/Dubai/business-bay/burger-bae-cafe",
+    note: "Listed as Burger BAE Cafe on Deliveroo",
+    qr: "/images/order/deliveroo-order-qr.png",
+    accent: "#00CCBC",
+    icon: ShoppingBag,
+  },
+  {
+    name: "WhatsApp",
+    href: `https://wa.me/971549966937?text=${encodeURIComponent("Hi, I'd like to place an order with Mayur International Kitchen.")}`,
+    note: "Message our team to order directly",
+    qr: "/images/order/whatsapp-order-qr.png",
+    accent: "#25D366",
+    icon: MessageCircle,
+  },
 ];
 const LOCAL_SEO_FAQS = [
   {
@@ -1558,27 +1579,62 @@ function ReservationWhatsAppButtons({ small = false, primaryOnly = false }: { sm
 
 function DeliveryLinks() {
   return (
-    <div className="grid gap-3 sm:grid-cols-3">
+    <div className="grid gap-4 sm:grid-cols-2">
       {DELIVERY_LINKS.map((platform) => (
-        <a
-          key={platform.name}
-          href={platform.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group flex min-h-20 items-center gap-4 rounded-2xl border border-black/10 bg-white px-5 py-4 shadow-sm transition-all hover:-translate-y-0.5 hover:border-[#C9600A]/40 hover:shadow-md"
-          aria-label={`Open ${platform.name} — ${platform.note}`}
-        >
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#F8EBC5] text-[#9A7000]">
-            <ShoppingBag size={20} strokeWidth={1.8} aria-hidden="true" />
-          </span>
-          <span className="min-w-0 flex-1">
-            <span className="block font-bold text-[#1A0A00]">{platform.name}</span>
-            <span className="block text-xs text-[#7A5C40]">{platform.note}</span>
-          </span>
-          <ExternalLink size={16} className="shrink-0 text-[#C9600A]" aria-hidden="true" />
-        </a>
+        <article key={platform.name} className="grid items-center gap-5 rounded-2xl border-2 border-[#1A0A00] bg-[#FFFDF9] p-5 shadow-[4px_4px_0_#1A0A00] sm:grid-cols-[1fr_116px]">
+          <div>
+            <span className="mb-4 flex h-11 w-11 items-center justify-center rounded-full text-white" style={{ backgroundColor: platform.accent }}>
+              <platform.icon size={21} strokeWidth={2} aria-hidden="true" />
+            </span>
+            <h3 className="text-2xl uppercase text-[#1A0A00]" style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.04em" }}>{platform.name}</h3>
+            <p className="mt-1 text-xs leading-5 text-[#7A5C40]">{platform.note}</p>
+            <a href={platform.href} target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex min-h-11 items-center gap-2 rounded-full border-2 border-[#1A0A00] bg-[#FF5C00] px-5 text-sm font-bold uppercase tracking-[0.1em] transition-transform hover:-translate-y-0.5" aria-label={`Order on ${platform.name}`}>
+              Order now <ExternalLink size={15} aria-hidden="true" />
+            </a>
+          </div>
+          <div className="flex items-center gap-4 sm:block">
+            <img src={platform.qr} alt={`QR code to order on ${platform.name}`} className="h-28 w-28 rounded-xl border-2 border-[#1A0A00] bg-[#FFF9F0] p-1" loading="lazy" />
+            <p className="max-w-[9rem] text-[0.65rem] font-bold uppercase leading-4 tracking-[0.14em] text-[#8A3500] sm:mt-2 sm:text-center">Scan to order</p>
+          </div>
+        </article>
       ))}
     </div>
+  );
+}
+
+function FloatingOrderButton() {
+  const [open, setOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => setOpen(false), [location.pathname]);
+
+  return (
+    <aside className="fixed bottom-4 left-4 z-[80] sm:bottom-6 sm:left-6" aria-label="Online ordering">
+      {open && (
+        <div className="mb-3 w-[min(360px,calc(100vw-2rem))] rounded-[22px] border-[3px] border-[#1A0A00] bg-[#FFF9F0] p-4 shadow-[7px_7px_0_#1A0A00]">
+          <div className="flex items-start justify-between gap-4 border-b-2 border-dotted border-[#9B6A48] pb-3">
+            <div>
+              <p className="text-[0.68rem] font-bold uppercase tracking-[0.22em] text-[#8A3500]">Delivered to your door</p>
+              <h2 className="text-3xl uppercase leading-none text-[#1A0A00]" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>Choose your app</h2>
+            </div>
+            <button type="button" onClick={() => setOpen(false)} className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-2 border-[#1A0A00] bg-white" aria-label="Close online ordering"><X size={20} /></button>
+          </div>
+          <div className="mt-3 grid gap-2">
+            {DELIVERY_LINKS.map((platform) => (
+              <a key={platform.name} href={platform.href} target="_blank" rel="noopener noreferrer" className="flex min-h-14 items-center gap-3 rounded-xl border-2 border-[#1A0A00] bg-white px-3 transition-transform hover:-translate-y-0.5" aria-label={`Order on ${platform.name}`}>
+                <span className="flex h-9 w-9 items-center justify-center rounded-full text-white" style={{ backgroundColor: platform.accent }}><platform.icon size={17} aria-hidden="true" /></span>
+                <span className="flex-1 font-bold text-[#1A0A00]">{platform.name}</span>
+                <ExternalLink size={16} className="text-[#8A3500]" aria-hidden="true" />
+              </a>
+            ))}
+          </div>
+          <p className="mt-3 text-center text-[0.68rem] text-[#7A5C40]">QR codes are available in the Order Online section on our home page.</p>
+        </div>
+      )}
+      <button type="button" onClick={() => setOpen((value) => !value)} aria-expanded={open} className="flex min-h-14 items-center gap-3 rounded-full border-[3px] border-[#1A0A00] bg-[#FF5C00] px-5 font-bold uppercase tracking-[0.1em] text-[#1A0A00] shadow-[4px_4px_0_#1A0A00] transition-transform hover:-translate-y-1" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
+        <ShoppingBag size={21} aria-hidden="true" /> <span>Order online</span>
+      </button>
+    </aside>
   );
 }
 
@@ -3318,6 +3374,7 @@ export default function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
+      <FloatingOrderButton />
       <OffersPopup />
       <CookieConsent />
       <VercelAnalytics />
