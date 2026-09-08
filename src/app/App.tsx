@@ -1733,7 +1733,12 @@ function Footer() {
 
         <div className="mt-10 flex flex-col gap-3 border-t border-[#1A0A00]/20 pt-6 text-xs text-[#7A5C40] md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} Mayur International Kitchen Dubai. All rights reserved.</p>
-          <Link to="/privacy" className="min-h-11 py-3 hover:text-[#FF5C00]">Privacy & cookies</Link>
+          <div className="flex flex-wrap items-center gap-x-5">
+            <a href="https://www.indianfoodtaiwan.com/" target="_blank" rel="noopener noreferrer" className="min-h-11 py-3 transition-colors hover:text-[#FF5C00]">
+              Mayur Indian Kitchen Taiwan
+            </a>
+            <Link to="/privacy" className="min-h-11 py-3 hover:text-[#FF5C00]">Privacy & cookies</Link>
+          </div>
         </div>
       </div>
     </footer>
