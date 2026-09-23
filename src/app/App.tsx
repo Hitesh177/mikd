@@ -97,6 +97,8 @@ const RESERVATION_WHATSAPP_NUMBERS = [
   { international: "971549966938", display: "054 996 6938" },
 ];
 const RESERVATION_MESSAGE = "Hi, my name is [Your Name] and I'd like to reserve a table for [Number of People] people.";
+const FREE_DELIVERY_MESSAGE = "Hi, I'd like to order food with free delivery from Mayur International Kitchen. My delivery location is [Your Area].";
+const FREE_DELIVERY_WHATSAPP_URL = `https://wa.me/971549966937?text=${encodeURIComponent(FREE_DELIVERY_MESSAGE)}`;
 const GA_MEASUREMENT_ID = (import.meta.env.VITE_GA_MEASUREMENT_ID as string | undefined) || "G-Q33QGY4V1V";
 const CLARITY_PROJECT_ID = "y5c5kypd1d";
 const DELIVERY_LINKS = [
@@ -1476,6 +1478,12 @@ function Navbar() {
         </button>
       </div>
 
+      <div className="border-y border-white/15 bg-[#1A0A00] px-4 py-2 text-center text-[0.68rem] font-bold uppercase tracking-[0.16em] text-white sm:text-xs" aria-label="Dubai branch opening timeline">
+        <span className="text-[#C9A227]">MIK’D¹</span> · Opened July 2026
+        <span className="mx-3 text-white/35" aria-hidden="true">|</span>
+        <span className="text-[#FF5C00]">MIK’D²</span> · Opening September 2026
+      </div>
+
       {open && (
         <div id="mobile-navigation" className="md:hidden border-t" style={{ borderColor: "#ffffff20", backgroundColor: "#1A0A00" }}>
           {links.map((l) => (
@@ -1504,7 +1512,7 @@ function Navbar() {
 function NavSpacer() {
   const { pathname } = useLocation();
   if (pageHasHero(pathname)) return null;
-  return <div style={{ height: "64px" }} />;
+  return <div style={{ height: "97px" }} />;
 }
 
 function NeonButton({
@@ -1635,6 +1643,39 @@ function FloatingOrderButton() {
         <ShoppingBag size={21} aria-hidden="true" /> <span>Order online</span>
       </button>
     </aside>
+  );
+}
+
+function InstagramFeed() {
+  useEffect(() => {
+    if (document.querySelector('script[src="https://elfsightcdn.com/platform.js"]')) return;
+    const script = document.createElement("script");
+    script.src = "https://elfsightcdn.com/platform.js";
+    script.async = true;
+    script.dataset.mikElfsight = "true";
+    document.body.appendChild(script);
+  }, []);
+
+  return (
+    <section className="border-y-4 border-[#1A0A00] bg-[#F7F3EC] px-4 py-16 md:px-10 md:py-20" aria-labelledby="instagram-feed-title">
+      <div className="mx-auto max-w-[1400px]">
+        <div className="mb-9 flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
+          <div>
+            <p className="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-[#8A3500]">Fresh from the kitchen</p>
+            <h2 id="instagram-feed-title" className="uppercase leading-none text-[#1A0A00]" style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: "clamp(3rem, 6vw, 5.5rem)", letterSpacing: "0.02em" }}>
+              Follow the flavour
+            </h2>
+            <p className="mt-3 max-w-2xl leading-7 text-[#6D5948]">New dishes, behind-the-scenes moments and everyday life at Mayur International Kitchen Dubai.</p>
+          </div>
+          <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 shrink-0 items-center justify-center gap-2 rounded-full border-2 border-[#1A0A00] bg-[#FF5C00] px-6 font-bold uppercase tracking-[0.1em] text-[#1A0A00] shadow-[4px_4px_0_#1A0A00] transition-transform hover:-translate-y-1" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
+            <Instagram size={19} aria-hidden="true" /> Follow @mik.dubai
+          </a>
+        </div>
+        <div className="overflow-hidden rounded-[24px] border-2 border-[#1A0A00] bg-[#FFFDF9] p-3 shadow-[7px_7px_0_#1A0A00] md:p-5">
+          <div className="elfsight-app-6def997a-1265-4388-990e-430974959528 min-h-[280px]" data-elfsight-app-lazy />
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -1828,6 +1869,15 @@ function HeroCarousel() {
             >
               {s.cta}
             </Link>
+            <NeonButton
+              href={FREE_DELIVERY_WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              icon={MessageCircle}
+              small
+            >
+              Get Free Food Delivery From Us
+            </NeonButton>
             <ReservationWhatsAppButtons small primaryOnly />
           </div>
         </div>
@@ -2156,6 +2206,8 @@ function HomePage() {
           />
         </div>
       </section>
+
+      <InstagramFeed />
 
       {/* Blog Preview */}
       <section className="py-16 px-4" style={{ backgroundColor: "#F2EBE0" }}>
@@ -2617,7 +2669,7 @@ function OurStoryPage() {
                   15 Branches — and Now, Dubai
                 </h3>
                 <p style={{ fontFamily: "'Biryani', sans-serif", fontSize: "1rem", color: "#4A3520", lineHeight: 1.85 }}>
-                  The Mayur brand grew to 15 restaurants and 5 grocery stores across Taiwan. In 2025, MIK’D¹ opened at The Metropolis Tower, Burj Khalifa Street, Business Bay. The same recipes. The same standards. The same soul.
+                  The Mayur brand grew to 15 restaurants and 5 grocery stores across Taiwan. In July 2026, MIK’D¹ opened at The Metropolis Tower, Burj Khalifa Street, Business Bay. MIK’D² follows in September 2026. The same recipes. The same standards. The same soul.
                 </p>
               </div>
 
