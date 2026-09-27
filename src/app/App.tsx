@@ -119,6 +119,14 @@ const DELIVERY_LINKS = [
     icon: ShoppingBag,
   },
   {
+    name: "noon Food",
+    href: "https://food.noon.com/outlet/BRGRBTMTYO-Burger%20Bae/",
+    note: "Listed as Burger Bae on noon Food",
+    qr: "/images/order/noon-food-order-qr.png",
+    accent: "#FEEE00",
+    icon: ShoppingBag,
+  },
+  {
     name: "WhatsApp",
     href: `https://wa.me/971549966937?text=${encodeURIComponent("Hi, I'd like to place an order with Mayur International Kitchen.")}`,
     note: "Message our team to order directly",
@@ -1591,7 +1599,7 @@ function DeliveryLinks() {
       {DELIVERY_LINKS.map((platform) => (
         <article key={platform.name} className="grid items-center gap-5 rounded-2xl border-2 border-[#1A0A00] bg-[#FFFDF9] p-5 shadow-[4px_4px_0_#1A0A00] sm:grid-cols-[1fr_116px]">
           <div>
-            <span className="mb-4 flex h-11 w-11 items-center justify-center rounded-full text-white" style={{ backgroundColor: platform.accent }}>
+            <span className="mb-4 flex h-11 w-11 items-center justify-center rounded-full" style={{ backgroundColor: platform.accent, color: platform.name === "noon Food" ? "#1A0A00" : "#FFFFFF" }}>
               <platform.icon size={21} strokeWidth={2} aria-hidden="true" />
             </span>
             <h3 className="text-2xl uppercase text-[#1A0A00]" style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.04em" }}>{platform.name}</h3>
@@ -1630,7 +1638,7 @@ function FloatingOrderButton() {
           <div className="mt-3 grid gap-2">
             {DELIVERY_LINKS.map((platform) => (
               <a key={platform.name} href={platform.href} target="_blank" rel="noopener noreferrer" className="flex min-h-14 items-center gap-3 rounded-xl border-2 border-[#1A0A00] bg-white px-3 transition-transform hover:-translate-y-0.5" aria-label={`Order on ${platform.name}`}>
-                <span className="flex h-9 w-9 items-center justify-center rounded-full text-white" style={{ backgroundColor: platform.accent }}><platform.icon size={17} aria-hidden="true" /></span>
+                <span className="flex h-9 w-9 items-center justify-center rounded-full" style={{ backgroundColor: platform.accent, color: platform.name === "noon Food" ? "#1A0A00" : "#FFFFFF" }}><platform.icon size={17} aria-hidden="true" /></span>
                 <span className="flex-1 font-bold text-[#1A0A00]">{platform.name}</span>
                 <ExternalLink size={16} className="text-[#8A3500]" aria-hidden="true" />
               </a>
